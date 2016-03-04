@@ -1,0 +1,204 @@
+[ 2016-01-17T14:57:01+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user` WHERE ( email = 'zb@zb.com' and password = 'e10adc3949ba59abbe56e057f20f883e' and status = 1 ) LIMIT 1   [ RunTime:0.0400s ]
+SQL: SELECT * FROM `otc_user` WHERE `email` = 'zb@zb.com' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-17T14:57:03+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1453013823393&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65') ORDER BY n.sort asc, n.id desc  [ RunTime:0.1670s ]
+
+[ 2016-01-17T14:57:10+08:00 ] 127.0.0.1 /index/process-huishou-icon-win
+ERR: 非法操作:process-huishou-icon-win
+
+[ 2016-01-17T14:57:10+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1453013830783
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0000s ]
+
+[ 2016-01-17T14:57:17+08:00 ] 127.0.0.1 /admin/claims/claimsRecord?cod_cl_id=27
+ERR: 非法操作:claimsRecord
+
+[ 2016-01-17T14:58:03+08:00 ] 127.0.0.1 /admin/claims/claimsRecord?cod_cl_id=27
+ERR: 非法操作:claimsRecord
+
+[ 2016-01-17T14:58:05+08:00 ] 127.0.0.1 /admin/claims/claimsRecord?cod_cl_id=27
+ERR: 非法操作:claimsRecord
+
+[ 2016-01-17T14:58:07+08:00 ] 127.0.0.1 /admin/claims/claimsRecord?cod_cl_id=27
+ERR: 非法操作:claimsRecord
+
+[ 2016-01-17T14:58:08+08:00 ] 127.0.0.1 /admin/claims/claimsRecord?cod_cl_id=27
+ERR: 非法操作:claimsRecord
+
+[ 2016-01-17T15:03:11+08:00 ] 127.0.0.1 /admin/claims/claimsRecord?cod_cl_id=3
+ERR: 非法操作:claimsRecord
+
+[ 2016-01-17T15:03:58+08:00 ] 127.0.0.1 /admin/claims/claimsRecord?cod_cl_id=4
+ERR: 非法操作:claimsRecord
+
+[ 2016-01-17T15:04:09+08:00 ] 127.0.0.1 /admin/claims/claimsRecord?cod_cl_id=4
+ERR: 非法操作:claimsRecord
+
+[ 2016-01-17T15:06:05+08:00 ] 127.0.0.1 /admin/claims/claimsRecord?cod_cl_id=27
+ERR: 非法操作:claimsRecord
+
+[ 2016-01-17T15:06:20+08:00 ] 127.0.0.1 /admin/claims/claimsRecord?cod_cl_id=27
+ERR: 非法操作:claimsRecord
+
+[ 2016-01-17T15:06:22+08:00 ] 127.0.0.1 /admin/claims/claimsRecord?cod_cl_id=27
+ERR: 非法操作:claimsRecord
+
+[ 2016-01-17T15:08:26+08:00 ] 127.0.0.1 /admin/claims/claimsRecord?cod_cl_id=25
+ERR: 非法操作:claimsRecord
+
+[ 2016-01-17T15:08:59+08:00 ] 127.0.0.1 /admin/claims/claimsRecord
+ERR: 非法操作:claimsRecord
+
+[ 2016-01-17T15:09:02+08:00 ] 127.0.0.1 /admin/claims/claimsRecord
+ERR: 非法操作:claimsRecord
+
+[ 2016-01-17T15:09:24+08:00 ] 127.0.0.1 /admin/claims/claimsrecord
+ERR: 非法操作:claimsrecord
+
+[ 2016-01-17T15:10:41+08:00 ] 127.0.0.1 /admin/claims/claimrecord?cod_cl_id=27
+ERR: 1054:Unknown column 'otc_c1_ivs.cod_cust_id' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM `otc_cl_ivs` INNER JOIN otc_cust_person ON otc_c1_ivs.cod_cust_id=otc_cust_person.cod_cust_id  WHERE `cod_cl_id` = '27' 
+
+[ 2016-01-17T15:14:05+08:00 ] 127.0.0.1 /admin/claims/claimrecord?cod_cl_id=27
+ERR: 1054:Unknown column 'otc_c1_ivs.cod_cust_id' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM `otc_cl_ivs` LEFT JOIN otc_cust_person ON otc_c1_ivs.cod_cust_id=otc_cust_person.cod_cust_id  WHERE `cod_cl_id` = '27' 
+
+[ 2016-01-17T15:16:08+08:00 ] 127.0.0.1 /admin/claims/claimrecord?cod_cl_id=27
+ERR: 1054:Unknown column 'otc_c1_ivs.cod_cust_id' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM `otc_cl_ivs` LEFT JOIN otc_cust_person ON otc_c1_ivs.cod_cust_id=otc_cust_person.cod_cust_id  WHERE otc_cl_ivs.cod_cl_id = '27' 
+
+[ 2016-01-17T15:16:10+08:00 ] 127.0.0.1 /admin/claims/claimrecord?cod_cl_id=27
+ERR: 1054:Unknown column 'otc_c1_ivs.cod_cust_id' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM `otc_cl_ivs` LEFT JOIN otc_cust_person ON otc_c1_ivs.cod_cust_id=otc_cust_person.cod_cust_id  WHERE otc_cl_ivs.cod_cl_id = '27' 
+
+[ 2016-01-17T15:28:19+08:00 ] 127.0.0.1 /admin/claims/claimrecord?cod_cl_id=27
+ERR: 1054:Unknown column 'otc_cl_ivs.cod_cl_id' in 'where clause'
+ [ SQL语句 ] : SELECT * FROM otc_cl_ivs a LEFT JOIN otc_cust_person b ON a.cod_cust_id=b.cod_cust_id  WHERE otc_cl_ivs.cod_cl_id = '27' 
+
+[ 2016-01-17T16:46:49+08:00 ] 127.0.0.1 /admin/claims/claimsManager
+ERR: 1066:Not unique table/alias: 'a'
+ [ SQL语句 ] : SELECT * FROM otc_cl_mast a INNER JOIN otc_cf_mast a ON a.cf_mast_id=b.id  
+
+[ 2016-01-17T17:17:36+08:00 ] 127.0.0.1 /index/notebook-icon-win
+ERR: 非法操作:notebook-icon-win
+
+[ 2016-01-17T17:17:36+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1453022256383
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0020s ]
+
+[ 2016-01-17T17:17:54+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1453022274010
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0000s ]
+
+[ 2016-01-17T17:17:55+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1453022275498
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0000s ]
+
+[ 2016-01-17T17:18:00+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1453022280008
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0010s ]
+
+[ 2016-01-17T17:18:00+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1453022280728
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0000s ]
+
+[ 2016-01-17T17:18:08+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1453022288112
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0010s ]
+
+[ 2016-01-17T17:18:09+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1453022288976
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0010s ]
+
+[ 2016-01-17T17:18:09+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1453022289576
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0000s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0000s ]
+
+[ 2016-01-17T17:18:10+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1453022290344
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0000s ]
+
+[ 2016-01-17T17:18:11+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1453022291087
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0000s ]
+

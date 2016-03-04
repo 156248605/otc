@@ -1,0 +1,2064 @@
+[ 2016-01-29T09:14:52+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `otc_user` WHERE ( email = 'zb@zb.com' and password = 'e10adc3949ba59abbe56e057f20f883e' and status = 1 ) LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT * FROM `otc_user` WHERE `email` = 'zb@zb.com' LIMIT 1   [ RunTime:0.0060s ]
+
+[ 2016-01-29T09:14:55+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1454030094262&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.1154s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0834s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.1142s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.1010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0996s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74') AND n.type = 1 ORDER BY n.sort asc, n.id desc  [ RunTime:0.0854s ]
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+
+[ 2016-01-29T09:14:59+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454030098511
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0550s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.1112s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0568s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0568s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.1196s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0804s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0312s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0648s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0668s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0468s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0854s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0522s ]
+
+[ 2016-01-29T09:15:08+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454030108822
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0130s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0070s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0156s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 25,25   [ RunTime:0.0000s ]
+
+[ 2016-01-29T09:15:10+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454030109947
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0120s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0020s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0156s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0196s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 50,25   [ RunTime:0.0176s ]
+
+[ 2016-01-29T09:15:11+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454030110939
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0050s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0156s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0166s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0000s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 75,25   [ RunTime:0.0000s ]
+
+[ 2016-01-29T09:15:12+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454030112021
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0010s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0156s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 100,25   [ RunTime:0.0156s ]
+
+[ 2016-01-29T09:15:15+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454030115323
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0080s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0060s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0000s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0000s ]
+
+[ 2016-01-29T09:15:21+08:00 ] 127.0.0.1 /Admin/Claims/getStatusSelect/type/1?_dc=1454030121146
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0120s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0000s ]
+
+[ 2016-01-29T09:15:36+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454030135841
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0412s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0498s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0558s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0296s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0312s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0366s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0312s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0312s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0386s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0312s ]
+
+[ 2016-01-29T09:15:39+08:00 ] 127.0.0.1 /admin/claims/claimAllUploadFile
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast_file` [ RunTime:0.0070s ]
+SQL: SELECT `file`,`type` FROM `otc_cl_mast_file` WHERE `cl_id` = 152 AND `validflag` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT `code` FROM `otc_cl_mast` WHERE `id` = 152 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-29T09:15:42+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1454030142656
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0120s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0120s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0166s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 325 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 325 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0156s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0000s ]
+
+[ 2016-01-29T09:15:45+08:00 ] 127.0.0.1 /admin/claims/claimsManager?_dc=1454030145725
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0120s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0020s ]
+SQL: SELECT sum(surplus_amount) as surplus_amount FROM `otc_capitalpool`  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 608 行.
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast a LEFT JOIN otc_capitalpool  b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 1   [ RunTime:0.0156s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 609 行.
+SQL: SELECT a.id,a.product_name,b.name,a.status,ifnull(c.amt_ct_last,a.amt_cf_inv_price) as amt_ct_last,ifnull(date_format(c.dat_modify,'%Y-%m-%d'),'--') as dat_create FROM otc_cl_mast a LEFT JOIN otc_capitalpool b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 0,25   [ RunTime:0.0000s ]
+
+[ 2016-01-29T09:30:19+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454031019393
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0070s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0030s ]
+
+[ 2016-01-29T09:30:23+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454031023468
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0060s ]
+
+[ 2016-01-29T09:32:43+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454031163803
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0070s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T09:32:45+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454031165250
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-01-29T09:32:49+08:00 ] 127.0.0.1 /admin/claims/getClaimsinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0130s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0040s ]
+SQL: SELECT * FROM `otc_cl_mast` WHERE ( validflag = 1  and id = 150 ) LIMIT 1   [ RunTime:0.0040s ]
+
+[ 2016-01-29T09:32:51+08:00 ] 127.0.0.1 /admin/claims/claimAllUploadFile
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast_file` [ RunTime:0.0070s ]
+SQL: SELECT `file`,`type` FROM `otc_cl_mast_file` WHERE `cl_id` = 150 AND `validflag` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT `code` FROM `otc_cl_mast` WHERE `id` = 150 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-01-29T09:32:58+08:00 ] 127.0.0.1 /admin/claims/auditClaims
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SELECT d.borrower,d.product_name,u.realname,u.email FROM otc_cl_mast as d inner JOIN otc_user as u ON d.usr_create = u.id  WHERE d.id = 150 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast_file` [ RunTime:0.0100s ]
+SQL: SELECT `file` FROM `otc_cl_mast_file` WHERE `cl_id` = 150 AND `validflag` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `code` FROM `otc_cl_mast` WHERE `id` = 150 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-01-29T09:33:09+08:00 ] 127.0.0.1 /admin/claims/claimAllUploadFile
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0120s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast_file` [ RunTime:0.0060s ]
+SQL: SELECT `file`,`type` FROM `otc_cl_mast_file` WHERE `cl_id` = 150 AND `validflag` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+SQL: SELECT `code` FROM `otc_cl_mast` WHERE `id` = 150 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-29T09:33:20+08:00 ] 127.0.0.1 /admin/claims/claimAllUploadFile
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0070s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast_file` [ RunTime:0.0060s ]
+SQL: SELECT `file`,`type` FROM `otc_cl_mast_file` WHERE `cl_id` = 150 AND `validflag` = 1  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT `code` FROM `otc_cl_mast` WHERE `id` = 150 LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2016-01-29T09:33:27+08:00 ] 127.0.0.1 /admin/claims/claimAllUploadFile
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast_file` [ RunTime:0.0060s ]
+SQL: SELECT `file`,`type` FROM `otc_cl_mast_file` WHERE `cl_id` = 150 AND `validflag` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT `code` FROM `otc_cl_mast` WHERE `id` = 150 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-29T09:33:33+08:00 ] 127.0.0.1 /admin/claims/claimDelUploadFile
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast_file` [ RunTime:0.0060s ]
+SQL: UPDATE `otc_cl_mast_file` SET `validflag`='0' WHERE `cl_id` = 150 AND `file` = '/Uploads/ClaimsFile/2016-01-29/56aac16007228.png' [ RunTime:0.0800s ]
+
+[ 2016-01-29T09:33:36+08:00 ] 127.0.0.1 /admin/claims/claimAllUploadFile
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0070s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast_file` [ RunTime:0.0070s ]
+SQL: SELECT `file`,`type` FROM `otc_cl_mast_file` WHERE `cl_id` = 150 AND `validflag` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT `code` FROM `otc_cl_mast` WHERE `id` = 150 LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2016-01-29T09:33:41+08:00 ] 127.0.0.1 /admin/claims/auditClaims
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+SQL: SELECT d.borrower,d.product_name,u.realname,u.email FROM otc_cl_mast as d inner JOIN otc_user as u ON d.usr_create = u.id  WHERE d.id = 150 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast_file` [ RunTime:0.0070s ]
+SQL: SELECT `file` FROM `otc_cl_mast_file` WHERE `cl_id` = 150 AND `validflag` = 1  [ RunTime:0.0020s ]
+SQL: SELECT `code` FROM `otc_cl_mast` WHERE `id` = 150 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-29T09:33:55+08:00 ] 127.0.0.1 /admin/claims/claimAllUploadFile
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast_file` [ RunTime:0.0070s ]
+SQL: SELECT `file`,`type` FROM `otc_cl_mast_file` WHERE `cl_id` = 150 AND `validflag` = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT `code` FROM `otc_cl_mast` WHERE `id` = 150 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-01-29T09:35:01+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454031301088
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0130s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0050s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0290s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0030s ]
+
+[ 2016-01-29T09:35:02+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454031302149
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0440s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0060s ]
+
+[ 2016-01-29T10:06:35+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454033195396
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0080s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0080s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:06:36+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454033196696
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:06:38+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1454033198625
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0120s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0080s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 325 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 325 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:07:10+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454033230205
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0140s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0240s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0290s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0130s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0050s ]
+
+[ 2016-01-29T10:07:14+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454033233928
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0070s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0820s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0170s ]
+
+[ 2016-01-29T10:07:42+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454033262040
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-01-29T10:07:45+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1454033265015
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0140s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 325 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 325 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:07:49+08:00 ] 127.0.0.1 /admin/claims/claimsManager?_dc=1454033269214
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0120s ]
+SQL: SELECT sum(surplus_amount) as surplus_amount FROM `otc_capitalpool`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 608 行.
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast a LEFT JOIN otc_capitalpool  b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 609 行.
+SQL: SELECT a.id,a.product_name,b.name,a.status,ifnull(c.amt_ct_last,a.amt_cf_inv_price) as amt_ct_last,ifnull(date_format(c.dat_modify,'%Y-%m-%d'),'--') as dat_create FROM otc_cl_mast a LEFT JOIN otc_capitalpool b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:07:55+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1454033275006
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 325 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 325 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-01-29T10:09:05+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454033345363
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:09:07+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454033346978
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0100s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:09:09+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454033349281
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0140s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:09:10+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1454033350359
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0090s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0080s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 325 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 325 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:09:12+08:00 ] 127.0.0.1 /admin/claims/claimsManager?_dc=1454033352013
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0070s ]
+SQL: SELECT sum(surplus_amount) as surplus_amount FROM `otc_capitalpool`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 608 行.
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast a LEFT JOIN otc_capitalpool  b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 609 行.
+SQL: SELECT a.id,a.product_name,b.name,a.status,ifnull(c.amt_ct_last,a.amt_cf_inv_price) as amt_ct_last,ifnull(date_format(c.dat_modify,'%Y-%m-%d'),'--') as dat_create FROM otc_cl_mast a LEFT JOIN otc_capitalpool b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:09:14+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1454033354636
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 325 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 325 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:09:15+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454033355588
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0120s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0070s ]
+
+[ 2016-01-29T10:09:16+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454033356770
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0130s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0080s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0110s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0030s ]
+
+[ 2016-01-29T10:14:36+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454033676812
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-01-29T10:16:03+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1454033763153&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0130s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74') AND n.type = 1 ORDER BY n.sort asc, n.id desc  [ RunTime:0.0080s ]
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+
+[ 2016-01-29T10:16:05+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454033765327
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0080s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0180s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0080s ]
+
+[ 2016-01-29T10:16:08+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454033768281
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-01-29T10:16:10+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454033770093
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0120s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0090s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:16:11+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454033771630
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0120s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:16:12+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1454033772413
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 325 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 325 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-01-29T10:16:14+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454033774172
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0080s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0080s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0060s ]
+
+[ 2016-01-29T10:17:13+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454033833574
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0150s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0120s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0300s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0150s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0140s ]
+
+[ 2016-01-29T10:17:15+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1454033834968
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0150s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0160s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 325 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 325 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-01-29T10:17:17+08:00 ] 127.0.0.1 /admin/claims/claimsManager?_dc=1454033837322
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0150s ]
+SQL: SELECT sum(surplus_amount) as surplus_amount FROM `otc_capitalpool`  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 608 行.
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast a LEFT JOIN otc_capitalpool  b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 609 行.
+SQL: SELECT a.id,a.product_name,b.name,a.status,ifnull(c.amt_ct_last,a.amt_cf_inv_price) as amt_ct_last,ifnull(date_format(c.dat_modify,'%Y-%m-%d'),'--') as dat_create FROM otc_cl_mast a LEFT JOIN otc_capitalpool b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:17:18+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1454033838577
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0120s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0150s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0290s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 325 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 325 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-01-29T10:17:19+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454033839226
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0190s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0210s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-01-29T10:17:20+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454033840796
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0080s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0050s ]
+
+[ 2016-01-29T10:17:56+08:00 ] 127.0.0.1 /admin/claims/claimsManager?_dc=1454033876663
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0110s ]
+SQL: SELECT sum(surplus_amount) as surplus_amount FROM `otc_capitalpool`  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 608 行.
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast a LEFT JOIN otc_capitalpool  b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 609 行.
+SQL: SELECT a.id,a.product_name,b.name,a.status,ifnull(c.amt_ct_last,a.amt_cf_inv_price) as amt_ct_last,ifnull(date_format(c.dat_modify,'%Y-%m-%d'),'--') as dat_create FROM otc_cl_mast a LEFT JOIN otc_capitalpool b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:19:07+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454033947111
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0120s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0110s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0030s ]
+
+[ 2016-01-29T10:21:27+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1454034087468&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74') AND n.type = 1 ORDER BY n.sort asc, n.id desc  [ RunTime:0.0290s ]
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+
+[ 2016-01-29T10:21:29+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454034089524
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0120s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0080s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0130s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:21:44+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454034104628
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0130s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0110s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND ( `cod_card_no` LIKE '%测试22%' OR `borrower` LIKE '%测试22%' ) AND `product_name` LIKE '%测试22%' LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0130s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND ( `cod_card_no` LIKE '%测试22%' OR `borrower` LIKE '%测试22%' ) AND `product_name` LIKE '%测试22%' ORDER BY id desc LIMIT 0,25   [ RunTime:0.0060s ]
+
+[ 2016-01-29T10:21:48+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454034108481
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0080s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0060s ]
+
+[ 2016-01-29T10:22:16+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454034136014
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0200s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0210s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0330s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0230s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND ( `cod_card_no` LIKE '%泰盛测试%' OR `borrower` LIKE '%泰盛测试%' ) AND `product_name` LIKE '%泰盛测试%' LIMIT 1   [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0150s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND ( `cod_card_no` LIKE '%泰盛测试%' OR `borrower` LIKE '%泰盛测试%' ) AND `product_name` LIKE '%泰盛测试%' ORDER BY id desc LIMIT 0,25   [ RunTime:0.0120s ]
+
+[ 2016-01-29T10:23:01+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454034181488
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0120s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0120s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0070s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND ( `cod_card_no` LIKE '%泰盛测试%' OR `borrower` LIKE '%泰盛测试%' ) AND `product_name` LIKE '%泰盛测试%' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND ( `cod_card_no` LIKE '%泰盛测试%' OR `borrower` LIKE '%泰盛测试%' ) AND `product_name` LIKE '%泰盛测试%' ORDER BY id desc LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:24:16+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1454034256801&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74') AND n.type = 1 ORDER BY n.sort asc, n.id desc  [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+
+[ 2016-01-29T10:24:21+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454034261300
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0140s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0090s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0030s ]
+
+[ 2016-01-29T10:24:31+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454034271344
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0200s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0190s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0160s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND ( `cod_card_no` LIKE '%测试22%' OR `borrower` LIKE '%测试22%' ) AND d.product_name LIKE '%测试22%' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND ( `cod_card_no` LIKE '%测试22%' OR `borrower` LIKE '%测试22%' ) AND d.product_name LIKE '%测试22%' ORDER BY id desc LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:26:20+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454034379920
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0150s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0140s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0490s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0240s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0200s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0150s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:29:29+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454034569408
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.003000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0160s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0080s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0080s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0190s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND d.product_name LIKE '%测试11%' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0150s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND d.product_name LIKE '%测试11%' ORDER BY id desc LIMIT 0,25   [ RunTime:0.0090s ]
+
+[ 2016-01-29T10:29:39+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454034579024
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0140s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0080s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:29:47+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454034587806
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0080s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0090s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND d.product_name LIKE '%测试%' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND d.product_name LIKE '%测试%' ORDER BY id desc LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:29:53+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454034592904
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0090s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-01-29T10:32:08+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1454034728211&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0080s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74') AND n.type = 1 ORDER BY n.sort asc, n.id desc  [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+
+[ 2016-01-29T10:32:14+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454034733823
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0130s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0140s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0150s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:32:15+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454034735451
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-01-29T10:32:24+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454034744062
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0200s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0290s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 AND `product_name` LIKE '%中欧%' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0310s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 AND `product_name` LIKE '%中欧%' ORDER BY id desc  [ RunTime:0.0100s ]
+
+[ 2016-01-29T10:32:26+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1454034746268
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0070s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 328 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:33:51+08:00 ] 127.0.0.1 /admin/claims/claimsManager?_dc=1454034831039
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0150s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0130s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0060s ]
+SQL: SELECT sum(surplus_amount) as surplus_amount FROM `otc_capitalpool`  [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 611 行.
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast a LEFT JOIN otc_capitalpool  b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 1   [ RunTime:0.0040s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 612 行.
+SQL: SELECT a.id,a.product_name,b.name,a.status,ifnull(c.amt_ct_last,a.amt_cf_inv_price) as amt_ct_last,ifnull(date_format(c.dat_modify,'%Y-%m-%d'),'--') as dat_create FROM otc_cl_mast a LEFT JOIN otc_capitalpool b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 0,25   [ RunTime:0.0050s ]
+
+[ 2016-01-29T10:33:51+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1454034831554
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 328 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0060s ]
+
+[ 2016-01-29T10:33:55+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1454034835433&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0280s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74') AND n.type = 1 ORDER BY n.sort asc, n.id desc  [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+
+[ 2016-01-29T10:33:57+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454034837576
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0120s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0070s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T10:33:58+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1454034838772
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0050s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 328 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-01-29T10:34:03+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1454034842893
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0340s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0230s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 328 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0160s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 AND `product_name` LIKE '%22%' LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0130s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 AND `product_name` LIKE '%22%' ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-01-29T11:19:01+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454037541287
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0080s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0080s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0030s ]
+
+[ 2016-01-29T11:19:13+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454037553837
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0100s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 25,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T11:19:15+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454037555195
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0070s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0060s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 50,25   [ RunTime:0.0030s ]
+
+[ 2016-01-29T11:19:16+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454037556159
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0110s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 75,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T11:19:17+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454037557695
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0070s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 100,25   [ RunTime:0.0030s ]
+
+[ 2016-01-29T11:19:21+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454037561134
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0070s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T11:19:29+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454037569376
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0110s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND d.product_name LIKE '%测试%' LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND d.product_name LIKE '%测试%' ORDER BY id desc LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T11:19:36+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454037576212
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0300s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0280s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0240s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0180s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0220s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0140s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0050s ]
+
+[ 2016-01-29T11:19:39+08:00 ] 127.0.0.1 /admin/claims/getClaimsinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0150s ]
+SQL: SELECT * FROM `otc_cl_mast` WHERE ( validflag = 1  and id = 150 ) LIMIT 1   [ RunTime:0.0060s ]
+
+[ 2016-01-29T11:19:46+08:00 ] 127.0.0.1 /admin/claims/claimAllUploadFile
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast_file` [ RunTime:0.0110s ]
+SQL: SELECT `file`,`type` FROM `otc_cl_mast_file` WHERE `cl_id` = 150 AND `validflag` = 1  [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0420s ]
+SQL: SELECT `code` FROM `otc_cl_mast` WHERE `id` = 150 LIMIT 1   [ RunTime:0.0130s ]
+
+[ 2016-01-29T11:19:50+08:00 ] 127.0.0.1 /admin/claims/auditClaims
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0140s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0190s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SELECT d.borrower,d.product_name,u.realname,u.email FROM otc_cl_mast as d inner JOIN otc_user as u ON d.usr_create = u.id  WHERE d.id = 150 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast_file` [ RunTime:0.0080s ]
+SQL: SELECT `file` FROM `otc_cl_mast_file` WHERE `cl_id` = 150 AND `validflag` = 1  [ RunTime:0.0020s ]
+SQL: SELECT `code` FROM `otc_cl_mast` WHERE `id` = 150 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-01-29T11:20:23+08:00 ] 127.0.0.1 /admin/claims/getClaimsinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0450s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0340s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0360s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0300s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0560s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0410s ]
+SQL: SELECT * FROM `otc_cl_mast` WHERE ( validflag = 1  and id = 150 ) LIMIT 1   [ RunTime:0.0310s ]
+
+[ 2016-01-29T11:20:30+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454037630272
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0070s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0030s ]
+
+[ 2016-01-29T11:20:32+08:00 ] 127.0.0.1 /admin/claims/getClaimsinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `otc_cl_mast` WHERE ( validflag = 1  and id = 134 ) LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2016-01-29T11:20:40+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454037640816
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-01-29T11:20:42+08:00 ] 127.0.0.1 /admin/claims/claimAllUploadFile
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast_file` [ RunTime:0.0070s ]
+SQL: SELECT `file`,`type` FROM `otc_cl_mast_file` WHERE `cl_id` = 150 AND `validflag` = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT `code` FROM `otc_cl_mast` WHERE `id` = 150 LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2016-01-29T11:20:46+08:00 ] 127.0.0.1 /admin/claims/auditClaims
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.borrower,d.product_name,u.realname,u.email FROM otc_cl_mast as d inner JOIN otc_user as u ON d.usr_create = u.id  WHERE d.id = 150 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast_file` [ RunTime:0.0070s ]
+SQL: SELECT `file` FROM `otc_cl_mast_file` WHERE `cl_id` = 150 AND `validflag` = 1  [ RunTime:0.0020s ]
+SQL: SELECT `code` FROM `otc_cl_mast` WHERE `id` = 150 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-01-29T15:18:39+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454051919121
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0100s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0420s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0030s ]
+
+[ 2016-01-29T15:19:09+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454051948893
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0090s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0050s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-01-29T15:19:10+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1454051950411
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0090s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 328 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0040s ]
+
+[ 2016-01-29T15:19:12+08:00 ] 127.0.0.1 /admin/claims/claimsManager?_dc=1454051951876
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0060s ]
+SQL: SELECT sum(surplus_amount) as surplus_amount FROM `otc_capitalpool`  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 611 行.
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast a LEFT JOIN otc_capitalpool  b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 1   [ RunTime:0.0030s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 612 行.
+SQL: SELECT a.id,a.product_name,b.name,a.status,ifnull(c.amt_ct_last,a.amt_cf_inv_price) as amt_ct_last,ifnull(date_format(c.dat_modify,'%Y-%m-%d'),'--') as dat_create FROM otc_cl_mast a LEFT JOIN otc_capitalpool b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 0,25   [ RunTime:0.0030s ]
+
+[ 2016-01-29T15:19:13+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454051953684
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0060s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0030s ]
+
+[ 2016-01-29T15:42:04+08:00 ] 127.0.0.1 /admin/test
+ERR: 无法加载控制器:Test
+
+[ 2016-01-29T15:42:38+08:00 ] 127.0.0.1 /admin/test/test
+ERR: 无法加载控制器:Test
+
+[ 2016-01-29T15:42:43+08:00 ] 127.0.0.1 /admin/test/index
+ERR: 无法加载控制器:Test
+
+[ 2016-01-29T15:43:03+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1454053383798&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74') AND n.type = 1 ORDER BY n.sort asc, n.id desc  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+
+[ 2016-01-29T15:43:30+08:00 ] 127.0.0.1 /admin/test/
+ERR: 无法加载控制器:Test
+
+[ 2016-01-29T15:43:38+08:00 ] 127.0.0.1 /admin/test/index
+ERR: 无法加载控制器:Test
+
+[ 2016-01-29T15:46:47+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1454053607558
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0090s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0070s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0060s ]
+
+[ 2016-01-29T15:46:51+08:00 ] 127.0.0.1 /admin/claims/getClaimsAuditList?_dc=1454053610811
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0560s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0330s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0200s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0140s ]
+
+[ 2016-01-29T15:46:51+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1454053611771
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0090s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 328 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0020s ]
+
+[ 2016-01-29T15:46:52+08:00 ] 127.0.0.1 /admin/claims/claimsManager?_dc=1454053612606
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0070s ]
+SQL: SELECT sum(surplus_amount) as surplus_amount FROM `otc_capitalpool`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 611 行.
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast a LEFT JOIN otc_capitalpool  b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 612 行.
+SQL: SELECT a.id,a.product_name,b.name,a.status,ifnull(c.amt_ct_last,a.amt_cf_inv_price) as amt_ct_last,ifnull(date_format(c.dat_modify,'%Y-%m-%d'),'--') as dat_create FROM otc_cl_mast a LEFT JOIN otc_capitalpool b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-01-29T15:46:53+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1454053613517
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0130s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 328 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 328 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0050s ]
+
+[ 2016-01-29T15:46:55+08:00 ] 127.0.0.1 /admin/claims/claimsManager?_dc=1454053614809
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0240s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0190s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0170s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0120s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0210s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0200s ]
+SQL: SELECT sum(surplus_amount) as surplus_amount FROM `otc_capitalpool`  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0180s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 611 行.
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast a LEFT JOIN otc_capitalpool  b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 1   [ RunTime:0.0110s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 612 行.
+SQL: SELECT a.id,a.product_name,b.name,a.status,ifnull(c.amt_ct_last,a.amt_cf_inv_price) as amt_ct_last,ifnull(date_format(c.dat_modify,'%Y-%m-%d'),'--') as dat_create FROM otc_cl_mast a LEFT JOIN otc_capitalpool b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 0,25   [ RunTime:0.0120s ]
+
+[ 2016-01-29T15:46:59+08:00 ] 127.0.0.1 /Admin/Claims/getStatusSelect/type/1?_dc=1454053618954
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+

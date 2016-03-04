@@ -1,0 +1,183 @@
+[ 2016-01-15T09:19:53+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `otc_user` WHERE ( email = 'zb@zb.com' and password = 'e10adc3949ba59abbe56e057f20f883e' and status = 1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `otc_user` WHERE `email` = 'zb@zb.com' LIMIT 1   [ RunTime:0.0040s ]
+
+[ 2016-01-15T09:19:56+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1452820796064&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65') ORDER BY n.sort asc, n.id desc  [ RunTime:0.0260s ]
+
+[ 2016-01-15T09:27:27+08:00 ] 127.0.0.1 /index/process-huishou-icon-win
+ERR: 非法操作:process-huishou-icon-win
+
+[ 2016-01-15T09:27:27+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1452821247244
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0130s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0050s ]
+
+[ 2016-01-15T09:31:52+08:00 ] 127.0.0.1 /index/process-shenhe-icon-win
+ERR: 非法操作:process-shenhe-icon-win
+
+[ 2016-01-15T09:31:52+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1452821512233
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0120s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc  [ RunTime:0.0040s ]
+
+[ 2016-01-15T09:38:12+08:00 ] 127.0.0.1 /index/process-shenhe-icon-win
+ERR: 非法操作:process-shenhe-icon-win
+
+[ 2016-01-15T09:38:12+08:00 ] 127.0.0.1 /admin/claims/getClaimslist?_dc=1452821892809
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0120s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0100s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 ORDER BY id desc  [ RunTime:0.0050s ]
+
+[ 2016-01-15T09:39:36+08:00 ] 127.0.0.1 /index/process-huishou-icon-win
+ERR: 非法操作:process-huishou-icon-win
+
+[ 2016-01-15T09:39:37+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1452821976845
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0060s ]
+
+[ 2016-01-15T09:58:15+08:00 ] 127.0.0.1 /index/process-huishou-icon-win
+ERR: 非法操作:process-huishou-icon-win
+
+[ 2016-01-15T09:58:16+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1452823095667
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0980s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.1770s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0820s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.2030s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.2290s ]
+
+[ 2016-01-15T10:11:36+08:00 ] 127.0.0.1 /index/process-huishou-icon-win
+ERR: 非法操作:process-huishou-icon-win
+
+[ 2016-01-15T10:11:36+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1452823896513
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0040s ]
+
+[ 2016-01-15T10:13:49+08:00 ] 127.0.0.1 /index/process-huishou-icon-win
+ERR: 非法操作:process-huishou-icon-win
+
+[ 2016-01-15T10:13:49+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1452824029112
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0140s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0130s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0040s ]
+
+[ 2016-01-15T10:39:50+08:00 ] 127.0.0.1 /admin/claims/getClaimsinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `otc_cl_mast` WHERE ( validflag = 1  and id = 25 ) LIMIT 1   [ RunTime:0.0040s ]
+
+[ 2016-01-15T10:47:49+08:00 ] 127.0.0.1 /index/process-huishou-icon-win
+ERR: 非法操作:process-huishou-icon-win
+
+[ 2016-01-15T10:47:49+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1452826069509
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0040s ]
+
+[ 2016-01-15T13:33:31+08:00 ] 127.0.0.1 /index/process-huishou-icon-win
+ERR: 非法操作:process-huishou-icon-win
+
+[ 2016-01-15T13:33:31+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1452836011599
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0260s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0800s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0200s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0080s ]
+
+[ 2016-01-15T13:33:52+08:00 ] 127.0.0.1 /admin/claims/claimsManager
+ERR: 1146:Table 'tjotc.otc_cl_mask' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `otc_cl_mask`
+
+[ 2016-01-15T13:34:21+08:00 ] 127.0.0.1 /admin/claims/claimsManager
+ERR: 1146:Table 'tjotc.otc_cl_mask' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `otc_cl_mask`
+
+[ 2016-01-15T13:35:58+08:00 ] 127.0.0.1 /admin/claims/claimsmanager
+ERR: 1146:Table 'tjotc.otc_cl_mask' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `otc_cl_mask`
+
+[ 2016-01-15T13:36:39+08:00 ] 127.0.0.1 /admin/claims/claimsManager
+ERR: 1146:Table 'tjotc.otc_cl_mask' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `otc_cl_mask`
+
+[ 2016-01-15T13:37:39+08:00 ] 127.0.0.1 /admin/claims/claimsManager
+ERR: 1146:Table 'tjotc.otc_cl_mask' doesn't exist
+ [ SQL语句 ] : SHOW COLUMNS FROM `otc_cl_mask`
+
+[ 2016-01-15T13:39:17+08:00 ] 127.0.0.1 /admin/claims/claimsManager
+ERR: 1146:Table 'tjotc.cf_mast' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `otc_cl_mast` INNER JOIN cf_mast ON cl_mast.cf_mast_id=cf.mast.id  
+
+[ 2016-01-15T13:41:38+08:00 ] 127.0.0.1 /admin/claims/claimsManager
+ERR: 1054:Unknown column 'cf.mast.id' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM `otc_cl_mast` INNER JOIN otc_cf_mast ON otc_cl_mast.cf_mast_id=cf.mast.id  
+
+[ 2016-01-15T13:42:10+08:00 ] 127.0.0.1 /admin/claims/claimsManager
+ERR: 1146:Table 'tjotc.cf_mast' doesn't exist
+ [ SQL语句 ] : SELECT * FROM `otc_cl_mast` INNER JOIN cf_mast ON cl_mast.cf_mast_id=cf.mast.id  
+
+[ 2016-01-15T13:42:36+08:00 ] 127.0.0.1 /admin/claims/claimsManager
+ERR: 1054:Unknown column 'cl_mast.cf_mast_id' in 'on clause'
+ [ SQL语句 ] : SELECT * FROM `otc_cl_mast` INNER JOIN otc_cf_mast ON cl_mast.cf_mast_id=cf.mast.id  
+

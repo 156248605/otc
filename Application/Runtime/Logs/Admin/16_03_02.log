@@ -1,0 +1,1978 @@
+[ 2016-03-02T09:22:27+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-02T09:22:27+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015600s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015600s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-02T09:22:35+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0780s ]
+SQL: SELECT * FROM `otc_user` WHERE ( email = 'zb@zb.com' and password = 'e10adc3949ba59abbe56e057f20f883e' and status = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user` WHERE `email` = 'zb@zb.com' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-02T09:22:35+08:00 ] 127.0.0.1 /index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.015600s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.000000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-02T09:22:37+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1456881756912&page=1&start=0&limit=25
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0190s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0680s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0020s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65','66','67','68','69','70','73','74','75','76','77','78','79','80','81','82') AND n.type = 1 AND n.status = 1 ORDER BY n.sort asc, n.id desc  [ RunTime:0.1690s ]
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+
+[ 2016-03-02T16:45:18+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-02T16:45:18+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.015000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.015000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-02T16:45:28+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user` WHERE ( email = 'zb@zb.com' and password = 'e10adc3949ba59abbe56e057f20f883e' and status = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user` WHERE `email` = 'zb@zb.com' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-03-02T16:45:28+08:00 ] 127.0.0.1 /index/index.html
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.000000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.004000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-02T16:45:29+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1456908329743&page=1&start=0&limit=25
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65','66','67','68','69','70','73','74','75','76','77','78','79','80','81','82') AND n.type = 1 AND n.status = 1 ORDER BY n.sort asc, n.id desc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+
+[ 2016-03-02T16:45:33+08:00 ] 127.0.0.1 /Admin/Foundation/allFoundStatus/type/1?_dc=1456908333061
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0030s ]
+
+[ 2016-03-02T16:45:33+08:00 ] 127.0.0.1 /Admin/Access/getUserPermission
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,n.permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','66','67','68','69','70','73','74','75','76','77','78','79','80','81','82')  [ RunTime:0.0040s ]
+
+[ 2016-03-02T16:45:33+08:00 ] 127.0.0.1 /Admin/Foundation/getBufferFound?_dc=1456908333411
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0020s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`holder`,`investment_type`,`total_amount`,`surplus_amount`,`status`,`memo`,`usr_create`,`dat_create` FROM `otc_capitalpool` WHERE `validflag` = 1 AND `usr_create` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`holder`,`investment_type`,`total_amount`,`surplus_amount`,`status`,`memo`,`usr_create`,`dat_create` FROM `otc_capitalpool` WHERE `validflag` = 1 AND `usr_create` = 1 LIMIT 0,25   [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:45:38+08:00 ] 127.0.0.1 /Admin/Access/getUserPermission
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,n.permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','66','67','68','69','70','73','74','75','76','77','78','79','80','81','82')  [ RunTime:0.0030s ]
+
+[ 2016-03-02T16:45:38+08:00 ] 127.0.0.1 /Admin/Foundation/getBufferFound?_dc=1456908338646
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`holder`,`investment_type`,`total_amount`,`surplus_amount`,`status`,`memo`,`usr_create`,`dat_create` FROM `otc_capitalpool` WHERE `validflag` = 1 AND `usr_create` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`holder`,`investment_type`,`total_amount`,`surplus_amount`,`status`,`memo`,`usr_create`,`dat_create` FROM `otc_capitalpool` WHERE `validflag` = 1 AND `usr_create` = 1 LIMIT 0,25   [ RunTime:0.0010s ]
+
+[ 2016-03-02T16:45:40+08:00 ] 127.0.0.1 /Admin/Foundation/allFoundStatus/type/1?_dc=1456908340457
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+
+[ 2016-03-02T16:45:40+08:00 ] 127.0.0.1 /Admin/Foundation/foundationList?_dc=1456908340803
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`holder`,`investment_type`,`total_amount`,`surplus_amount`,`status`,`memo`,`usr_create`,`dat_create` FROM `otc_capitalpool` WHERE `validflag` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`holder`,`investment_type`,`total_amount`,`surplus_amount`,`status`,`memo`,`usr_create`,`dat_create` FROM `otc_capitalpool` WHERE `validflag` = 1 LIMIT 0,25   [ RunTime:0.0010s ]
+
+[ 2016-03-02T16:45:48+08:00 ] 127.0.0.1 /Admin/Foundation/foundAllClaims
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.type,a.status,b.amt_ct,b.amt_ct_last,a.product_name FROM otc_cl_mast a LEFT JOIN otc_cl_ctl b ON a.id=b.cod_cl_id  WHERE a.capitalid = '2' AND a.validflag = 1  [ RunTime:0.0010s ]
+SQL: SELECT sum(b.amt_ct_last) as surplus_amount FROM otc_cl_mast a LEFT JOIN otc_cl_ctl b ON a.id=b.cod_cl_id  WHERE a.capitalid = '2' AND a.validflag = 1  [ RunTime:0.0010s ]
+
+[ 2016-03-02T16:45:50+08:00 ] 127.0.0.1 /Admin/Foundation/repurchase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0020s ]
+SQL: SELECT b.* FROM otc_capitalpool a INNER JOIN otc_cf_ctl b on a.id = b.capitalid  WHERE a.id = 2 AND a.surplus_amount = 0  [ RunTime:0.0640s ]
+
+[ 2016-03-02T16:46:17+08:00 ] 127.0.0.1 /Admin/Access/getUserPermission
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,n.permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','66','67','68','69','70','73','74','75','76','77','78','79','80','81','82')  [ RunTime:0.0030s ]
+
+[ 2016-03-02T16:46:17+08:00 ] 127.0.0.1 /Admin/Foundation/getBufferFound?_dc=1456908377200
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`holder`,`investment_type`,`total_amount`,`surplus_amount`,`status`,`memo`,`usr_create`,`dat_create` FROM `otc_capitalpool` WHERE `validflag` = 1 AND `usr_create` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`holder`,`investment_type`,`total_amount`,`surplus_amount`,`status`,`memo`,`usr_create`,`dat_create` FROM `otc_capitalpool` WHERE `validflag` = 1 AND `usr_create` = 1 LIMIT 0,25   [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:46:20+08:00 ] 127.0.0.1 /Admin/Foundation/viewFoundation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_capitalpool` WHERE `id` = 108 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `otc_cf_mast` WHERE `id` = 99 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:46:20+08:00 ] 127.0.0.1 /Admin/Foundation/FoundAllUploadFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool_file` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`file`,`type`,`filename` FROM `otc_capitalpool_file` WHERE `capitalid` = 108 AND `validflag` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT `otc_code` FROM `otc_capitalpool` WHERE `id` = 108 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-03-02T16:46:20+08:00 ] 127.0.0.1 /Admin/Foundation/cfMastSelect?_dc=1456908380586
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title` FROM `otc_cf_mast` WHERE `cod_cf_status` <> 0  [ RunTime:0.0010s ]
+
+[ 2016-03-02T16:46:24+08:00 ] 127.0.0.1 /Admin/Foundation/foundAllClaims?_dc=1456908384443
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.type,a.status,b.amt_ct,b.amt_ct_last,a.product_name FROM otc_cl_mast a LEFT JOIN otc_cl_ctl b ON a.id=b.cod_cl_id  WHERE a.capitalid = '108' AND a.validflag = 1  [ RunTime:0.0010s ]
+SQL: SELECT sum(b.amt_ct_last) as surplus_amount FROM otc_cl_mast a LEFT JOIN otc_cl_ctl b ON a.id=b.cod_cl_id  WHERE a.capitalid = '108' AND a.validflag = 1  [ RunTime:0.0010s ]
+
+[ 2016-03-02T16:46:29+08:00 ] 127.0.0.1 /Admin/Foundation/getFundsAuditList?_dc=1456908389822
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_capitalpool as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT d.* FROM otc_capitalpool as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:46:30+08:00 ] 127.0.0.1 /Admin/Foundation/foundationList?_dc=1456908390749
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`holder`,`investment_type`,`total_amount`,`surplus_amount`,`status`,`memo`,`usr_create`,`dat_create` FROM `otc_capitalpool` WHERE `validflag` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`holder`,`investment_type`,`total_amount`,`surplus_amount`,`status`,`memo`,`usr_create`,`dat_create` FROM `otc_capitalpool` WHERE `validflag` = 1 LIMIT 0,25   [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:47:29+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:49:29+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0010s ]
+
+[ 2016-03-02T16:50:16+08:00 ] 127.0.0.1 /Admin/Access/getUserPermission
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,n.permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','66','67','68','69','70','73','74','75','76','77','78','79','80','81','82')  [ RunTime:0.0020s ]
+
+[ 2016-03-02T16:50:16+08:00 ] 127.0.0.1 /Admin/Foundation/viewFoundation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_capitalpool` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `otc_cf_mast` WHERE `id` = 91 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:50:17+08:00 ] 127.0.0.1 /Admin/Access/getUserPermission
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,n.permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','66','67','68','69','70','73','74','75','76','77','78','79','80','81','82')  [ RunTime:0.0030s ]
+
+[ 2016-03-02T16:50:18+08:00 ] 127.0.0.1 /Admin/Foundation/viewFoundation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_capitalpool` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0020s ]
+SQL: SELECT `title` FROM `otc_cf_mast` WHERE `id` = 91 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:50:18+08:00 ] 127.0.0.1 /Admin/Foundation/FoundAllUploadFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool_file` [ RunTime:0.0020s ]
+SQL: SELECT `id`,`file`,`type`,`filename` FROM `otc_capitalpool_file` WHERE `capitalid` = 1 AND `validflag` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT `otc_code` FROM `otc_capitalpool` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:50:18+08:00 ] 127.0.0.1 /Admin/Foundation/FoundAllUploadFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool_file` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`file`,`type`,`filename` FROM `otc_capitalpool_file` WHERE `capitalid` = 1 AND `validflag` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT `otc_code` FROM `otc_capitalpool` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:50:19+08:00 ] 127.0.0.1 /Admin/Foundation/foundAllClaims?_dc=1456908619375
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.type,a.status,b.amt_ct,b.amt_ct_last,a.product_name FROM otc_cl_mast a LEFT JOIN otc_cl_ctl b ON a.id=b.cod_cl_id  WHERE a.capitalid = '1' AND a.validflag = 1  [ RunTime:0.0010s ]
+SQL: SELECT sum(b.amt_ct_last) as surplus_amount FROM otc_cl_mast a LEFT JOIN otc_cl_ctl b ON a.id=b.cod_cl_id  WHERE a.capitalid = '1' AND a.validflag = 1  [ RunTime:0.0010s ]
+
+[ 2016-03-02T16:50:30+08:00 ] 127.0.0.1 /Admin/Access/getUserPermission
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,n.permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','66','67','68','69','70','73','74','75','76','77','78','79','80','81','82')  [ RunTime:0.0020s ]
+
+[ 2016-03-02T16:50:31+08:00 ] 127.0.0.1 /Admin/Foundation/viewFoundation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_capitalpool` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `otc_cf_mast` WHERE `id` = 92 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:50:31+08:00 ] 127.0.0.1 /Admin/Foundation/FoundAllUploadFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool_file` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`file`,`type`,`filename` FROM `otc_capitalpool_file` WHERE `capitalid` = 2 AND `validflag` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT `otc_code` FROM `otc_capitalpool` WHERE `id` = 2 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:50:32+08:00 ] 127.0.0.1 /Admin/Foundation/foundAllClaims?_dc=1456908632875
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.type,a.status,b.amt_ct,b.amt_ct_last,a.product_name FROM otc_cl_mast a LEFT JOIN otc_cl_ctl b ON a.id=b.cod_cl_id  WHERE a.capitalid = '2' AND a.validflag = 1  [ RunTime:0.0010s ]
+SQL: SELECT sum(b.amt_ct_last) as surplus_amount FROM otc_cl_mast a LEFT JOIN otc_cl_ctl b ON a.id=b.cod_cl_id  WHERE a.capitalid = '2' AND a.validflag = 1  [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:51:12+08:00 ] 127.0.0.1 /Admin/Access/getUserPermission
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,n.permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','66','67','68','69','70','73','74','75','76','77','78','79','80','81','82')  [ RunTime:0.0020s ]
+
+[ 2016-03-02T16:51:12+08:00 ] 127.0.0.1 /Admin/Foundation/viewFoundation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_capitalpool` WHERE `id` = 108 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `otc_cf_mast` WHERE `id` = 99 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:51:13+08:00 ] 127.0.0.1 /Admin/Foundation/FoundAllUploadFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool_file` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`file`,`type`,`filename` FROM `otc_capitalpool_file` WHERE `capitalid` = 108 AND `validflag` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT `otc_code` FROM `otc_capitalpool` WHERE `id` = 108 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:51:16+08:00 ] 127.0.0.1 /Admin/Foundation/foundAllClaims?_dc=1456908676191
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.type,a.status,b.amt_ct,b.amt_ct_last,a.product_name FROM otc_cl_mast a LEFT JOIN otc_cl_ctl b ON a.id=b.cod_cl_id  WHERE a.capitalid = '108' AND a.validflag = 1  [ RunTime:0.0010s ]
+SQL: SELECT sum(b.amt_ct_last) as surplus_amount FROM otc_cl_mast a LEFT JOIN otc_cl_ctl b ON a.id=b.cod_cl_id  WHERE a.capitalid = '108' AND a.validflag = 1  [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:51:29+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0010s ]
+
+[ 2016-03-02T16:51:32+08:00 ] 127.0.0.1 /Admin/Access/getUserPermission
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,n.permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','66','67','68','69','70','73','74','75','76','77','78','79','80','81','82')  [ RunTime:0.0020s ]
+
+[ 2016-03-02T16:51:33+08:00 ] 127.0.0.1 /Admin/Foundation/viewFoundation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_capitalpool` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `otc_cf_mast` WHERE `id` = 91 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-03-02T16:51:34+08:00 ] 127.0.0.1 /Admin/Foundation/FoundAllUploadFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool_file` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`file`,`type`,`filename` FROM `otc_capitalpool_file` WHERE `capitalid` = 1 AND `validflag` = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT `otc_code` FROM `otc_capitalpool` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:51:37+08:00 ] 127.0.0.1 /Admin/Foundation/foundAllClaims?_dc=1456908697514
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.type,a.status,b.amt_ct,b.amt_ct_last,a.product_name FROM otc_cl_mast a LEFT JOIN otc_cl_ctl b ON a.id=b.cod_cl_id  WHERE a.capitalid = '1' AND a.validflag = 1  [ RunTime:0.0010s ]
+SQL: SELECT sum(b.amt_ct_last) as surplus_amount FROM otc_cl_mast a LEFT JOIN otc_cl_ctl b ON a.id=b.cod_cl_id  WHERE a.capitalid = '1' AND a.validflag = 1  [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:52:34+08:00 ] 127.0.0.1 /Admin/Cfmast/getStatusSelect/type/1?_dc=1456908754155
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0010s ]
+
+[ 2016-03-02T16:52:34+08:00 ] 127.0.0.1 /Admin/cfmast/getUnfinishProduct?_dc=1456908754462
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0020s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cf_mast a WHERE ( true and a.usr_create=1 and a.cod_is_delete=0 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT	t2.amt_ct_last,	t1.*, t2.id AS period_id,	t2.cod_period,	t2.ctr_ct_finish,	t2.ctr_ct,
+t2.ctr_ct_last FROM	otc_cf_mast t1 LEFT JOIN otc_cf_ctl t2 ON t1.id = t2.cf_mast_id WHERE t1.cod_cf_status IN (1, 2) and
+t1.dat_modify in (SELECT 	min(tt1.dat_modify) FROM	otc_cf_mast tt1
+LEFT JOIN otc_cf_ctl tt2 ON tt1.id = tt2.cf_mast_id
+WHERE
+	tt1.cod_cf_status IN (1, 2)
+
+AND tt1.cod_is_delete = 0
+AND tt2.ctr_ct_finish < 100
+group by rat_cf_inv_min)
+
+
+AND t1.cod_is_delete = 0
+AND t2.ctr_ct_finish < 100
+group by rat_cf_inv_min
+order by t1.rat_cf_inv_min asc,t1.dat_modify asc [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.dat_create,a.title,a.dat_create,a.cod_cf_status,a.amt_ct,case when a.id in(0,91,92,99,98) then 1 else 0 end as isshow,a.rat_cf_inv_min,a.amt_time,date_format(a.dat_create,'%Y-%m-%d') as dat_create FROM otc_cf_mast a WHERE ( true and a.usr_create=1 and a.cod_is_delete=0 ) ORDER BY a.dat_create desc LIMIT 0,25   [ RunTime:0.0010s ]
+
+[ 2016-03-02T16:52:37+08:00 ] 127.0.0.1 /Admin/cfmast/tlist?_dc=1456908757721
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cf_mast a WHERE ( true and a.cod_is_delete=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from (
+SELECT
+( case t2.ctr_ct_finish when 100 then 2  else 1 end) as openorclose,
+	 t2.amt_ct_last,
+	 (t2.amt_ct- t2.amt_ct_last)  as curr_amt,
+	t1.*, t2.id AS period_id,
+	t2.cod_period,
+	t2.ctr_ct_finish,
+	t2.ctr_ct, 
+	t2.ctr_ct_last
+	 
+
+FROM
+	otc_cf_mast t1
+LEFT JOIN otc_cf_ctl t2 ON t1.id = t2.cf_mast_id 
+WHERE
+	t1.cod_cf_status IN (1, 2)
+
+AND t1.cod_is_delete = 0
+AND t2.ctr_ct_finish <=100
+ 
+order by t1.rat_cf_inv_min asc,openorclose asc,t1.dat_modify asc,t2.cod_period desc
+) as c
+group by rat_cf_inv_min 
+ [ RunTime:0.0100s ]
+SQL: SELECT a.id,a.title,a.cod_cf_status,count(c.id) as allp,case when a.id in(0,91,92,99,98) then 1 else 0 end as isshow,a.rat_cf_inv_min,a.amt_time,a.dat_create,sum(case when c.cod_ivs_status=1 then c.amt_int_total else 0 end) as amt_ct FROM otc_cf_mast a left JOIN otc_cf_ivs c on a.id=c.cod_cf_id  WHERE ( true and a.cod_is_delete=0 ) GROUP BY a.id ORDER BY a.dat_create desc LIMIT 0,25   [ RunTime:0.0010s ]
+
+[ 2016-03-02T16:53:29+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:53:36+08:00 ] 127.0.0.1 /Admin/cfmast/getUnpublicProduct?_dc=1456908816264
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cf_mast a WHERE ( true and a.cod_cf_status =4 and a.cod_is_delete=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT	t2.amt_ct_last,	t1.*, t2.id AS period_id,	t2.cod_period,	t2.ctr_ct_finish,	t2.ctr_ct,
+t2.ctr_ct_last FROM	otc_cf_mast t1 LEFT JOIN otc_cf_ctl t2 ON t1.id = t2.cf_mast_id WHERE t1.cod_cf_status IN (1, 2) and
+t1.dat_modify in (SELECT 	min(tt1.dat_modify) FROM	otc_cf_mast tt1
+LEFT JOIN otc_cf_ctl tt2 ON tt1.id = tt2.cf_mast_id
+WHERE
+	tt1.cod_cf_status IN (1, 2)
+
+AND tt1.cod_is_delete = 0
+AND tt2.ctr_ct_finish < 100
+group by rat_cf_inv_min)
+
+
+AND t1.cod_is_delete = 0
+AND t2.ctr_ct_finish < 100
+group by rat_cf_inv_min
+order by t1.rat_cf_inv_min asc,t1.dat_modify asc [ RunTime:0.0040s ]
+SQL: SELECT a.id,a.dat_create,a.title,a.dat_create,a.cod_cf_status,a.amt_ct,case when a.id in(0,91,92,99,98) then 1 else 0 end as isshow,a.rat_cf_inv_min,a.amt_time,date_format(a.dat_create,'%Y-%m-%d') as dat_create FROM otc_cf_mast a WHERE ( true and a.cod_cf_status =4 and a.cod_is_delete=0 ) ORDER BY a.dat_create desc LIMIT 0,25   [ RunTime:0.0010s ]
+
+[ 2016-03-02T16:53:37+08:00 ] 127.0.0.1 /Admin/cfmast/getUncheckProduct?_dc=1456908817755
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cf_mast a WHERE ( a.cod_cf_status=6 and a.cod_is_delete=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT	t2.amt_ct_last,	t1.*, t2.id AS period_id,	t2.cod_period,	t2.ctr_ct_finish,	t2.ctr_ct,
+t2.ctr_ct_last FROM	otc_cf_mast t1 LEFT JOIN otc_cf_ctl t2 ON t1.id = t2.cf_mast_id WHERE t1.cod_cf_status IN (1, 2) and
+t1.dat_modify in (SELECT 	min(tt1.dat_modify) FROM	otc_cf_mast tt1
+LEFT JOIN otc_cf_ctl tt2 ON tt1.id = tt2.cf_mast_id
+WHERE
+	tt1.cod_cf_status IN (1, 2)
+
+AND tt1.cod_is_delete = 0
+AND tt2.ctr_ct_finish < 100
+group by rat_cf_inv_min)
+
+
+AND t1.cod_is_delete = 0
+AND t2.ctr_ct_finish < 100
+group by rat_cf_inv_min
+order by t1.rat_cf_inv_min asc,t1.dat_modify asc [ RunTime:0.0020s ]
+SQL: SELECT a.id,a.dat_create,a.title,a.dat_create,a.cod_cf_status,a.amt_ct,case when a.id in(0,91,92,99,98) then 1 else 0 end as isshow,a.rat_cf_inv_min,a.amt_time,date_format(a.dat_create,'%Y-%m-%d') as dat_create FROM otc_cf_mast a WHERE ( a.cod_cf_status=6 and a.cod_is_delete=0 ) ORDER BY a.dat_create desc LIMIT 0,25   [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:53:38+08:00 ] 127.0.0.1 /Admin/cfmast/getUnfinishProduct?_dc=1456908818618
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.002000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cf_mast a WHERE ( true and a.usr_create=1 and a.cod_is_delete=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT	t2.amt_ct_last,	t1.*, t2.id AS period_id,	t2.cod_period,	t2.ctr_ct_finish,	t2.ctr_ct,
+t2.ctr_ct_last FROM	otc_cf_mast t1 LEFT JOIN otc_cf_ctl t2 ON t1.id = t2.cf_mast_id WHERE t1.cod_cf_status IN (1, 2) and
+t1.dat_modify in (SELECT 	min(tt1.dat_modify) FROM	otc_cf_mast tt1
+LEFT JOIN otc_cf_ctl tt2 ON tt1.id = tt2.cf_mast_id
+WHERE
+	tt1.cod_cf_status IN (1, 2)
+
+AND tt1.cod_is_delete = 0
+AND tt2.ctr_ct_finish < 100
+group by rat_cf_inv_min)
+
+
+AND t1.cod_is_delete = 0
+AND t2.ctr_ct_finish < 100
+group by rat_cf_inv_min
+order by t1.rat_cf_inv_min asc,t1.dat_modify asc [ RunTime:0.0030s ]
+SQL: SELECT a.id,a.dat_create,a.title,a.dat_create,a.cod_cf_status,a.amt_ct,case when a.id in(0,91,92,99,98) then 1 else 0 end as isshow,a.rat_cf_inv_min,a.amt_time,date_format(a.dat_create,'%Y-%m-%d') as dat_create FROM otc_cf_mast a WHERE ( true and a.usr_create=1 and a.cod_is_delete=0 ) ORDER BY a.dat_create desc LIMIT 0,25   [ RunTime:0.0010s ]
+
+[ 2016-03-02T16:53:40+08:00 ] 127.0.0.1 /Admin/cfmast/tlist?_dc=1456908820394
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cf_mast a WHERE ( true and a.cod_is_delete=0 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: select * from (
+SELECT
+( case t2.ctr_ct_finish when 100 then 2  else 1 end) as openorclose,
+	 t2.amt_ct_last,
+	 (t2.amt_ct- t2.amt_ct_last)  as curr_amt,
+	t1.*, t2.id AS period_id,
+	t2.cod_period,
+	t2.ctr_ct_finish,
+	t2.ctr_ct, 
+	t2.ctr_ct_last
+	 
+
+FROM
+	otc_cf_mast t1
+LEFT JOIN otc_cf_ctl t2 ON t1.id = t2.cf_mast_id 
+WHERE
+	t1.cod_cf_status IN (1, 2)
+
+AND t1.cod_is_delete = 0
+AND t2.ctr_ct_finish <=100
+ 
+order by t1.rat_cf_inv_min asc,openorclose asc,t1.dat_modify asc,t2.cod_period desc
+) as c
+group by rat_cf_inv_min 
+ [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.title,a.cod_cf_status,count(c.id) as allp,case when a.id in(0,91,92,99,98) then 1 else 0 end as isshow,a.rat_cf_inv_min,a.amt_time,a.dat_create,sum(case when c.cod_ivs_status=1 then c.amt_int_total else 0 end) as amt_ct FROM otc_cf_mast a left JOIN otc_cf_ivs c on a.id=c.cod_cf_id  WHERE ( true and a.cod_is_delete=0 ) GROUP BY a.id ORDER BY a.dat_create desc LIMIT 0,25   [ RunTime:0.0010s ]
+
+[ 2016-03-02T16:55:30+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0010s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0010s ]
+
+[ 2016-03-02T16:55:30+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T16:57:31+08:00 ] 127.0.0.1 /
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+INFO: [ view_parse ] --START--
+INFO: [ template_filter ] --START--
+INFO: Run Behavior\ContentReplaceBehavior [ RunTime:0.000000s ]
+INFO: [ template_filter ] --END-- [ RunTime:0.001000s ]
+INFO: Run Behavior\ParseTemplateBehavior [ RunTime:0.004000s ]
+INFO: [ view_parse ] --END-- [ RunTime:0.005000s ]
+INFO: [ view_filter ] --START--
+INFO: Run Behavior\WriteHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ view_filter ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-02T16:57:32+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1456909052860&page=1&start=0&limit=25
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65','66','67','68','69','70','73','74','75','76','77','78','79','80','81','82') AND n.type = 1 AND n.status = 1 ORDER BY n.sort asc, n.id desc  [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+
+[ 2016-03-02T17:04:03+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1456909443399&page=1&start=0&limit=25
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65','66','67','68','69','70','73','74','75','76','77','78','79','80','81','82') AND n.type = 1 AND n.status = 1 ORDER BY n.sort asc, n.id desc  [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+
+[ 2016-03-02T17:06:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:08:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:10:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0010s ]
+
+[ 2016-03-02T17:12:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:13:49+08:00 ] 127.0.0.1 /Admin/Foundation/allFoundStatus/type/1?_dc=1456910029310
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:13:49+08:00 ] 127.0.0.1 /Admin/Access/getUserPermission
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,n.permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','66','67','68','69','70','73','74','75','76','77','78','79','80','81','82')  [ RunTime:0.0030s ]
+
+[ 2016-03-02T17:13:49+08:00 ] 127.0.0.1 /Admin/Foundation/getBufferFound?_dc=1456910029651
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`holder`,`investment_type`,`total_amount`,`surplus_amount`,`status`,`memo`,`usr_create`,`dat_create` FROM `otc_capitalpool` WHERE `validflag` = 1 AND `usr_create` = 1  [ RunTime:0.0000s ]
+SQL: SELECT `id`,`name`,`holder`,`investment_type`,`total_amount`,`surplus_amount`,`status`,`memo`,`usr_create`,`dat_create` FROM `otc_capitalpool` WHERE `validflag` = 1 AND `usr_create` = 1 LIMIT 0,25   [ RunTime:0.0010s ]
+
+[ 2016-03-02T17:13:52+08:00 ] 127.0.0.1 /Admin/Foundation/allFoundStatus/type/1?_dc=1456910032175
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+
+[ 2016-03-02T17:13:52+08:00 ] 127.0.0.1 /Admin/Foundation/foundationList?_dc=1456910032402
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.001000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`holder`,`investment_type`,`total_amount`,`surplus_amount`,`status`,`memo`,`usr_create`,`dat_create` FROM `otc_capitalpool` WHERE `validflag` = 1  [ RunTime:0.0010s ]
+SQL: SELECT `id`,`name`,`holder`,`investment_type`,`total_amount`,`surplus_amount`,`status`,`memo`,`usr_create`,`dat_create` FROM `otc_capitalpool` WHERE `validflag` = 1 LIMIT 0,25   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:14:00+08:00 ] 127.0.0.1 /Admin/Access/getUserPermission
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,n.permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','66','67','68','69','70','73','74','75','76','77','78','79','80','81','82')  [ RunTime:0.0030s ]
+
+[ 2016-03-02T17:14:01+08:00 ] 127.0.0.1 /Admin/Foundation/viewFoundation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_capitalpool` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `otc_cf_mast` WHERE `id` = 91 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:14:01+08:00 ] 127.0.0.1 /Admin/Foundation/FoundAllUploadFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool_file` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`file`,`type`,`filename` FROM `otc_capitalpool_file` WHERE `capitalid` = 1 AND `validflag` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT `otc_code` FROM `otc_capitalpool` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-03-02T17:14:01+08:00 ] 127.0.0.1 /Admin/Foundation/cfMastSelect?_dc=1456910041562
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`title` FROM `otc_cf_mast` WHERE `cod_cf_status` <> 0  [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:14:03+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0000s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:14:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001001s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0010s ]
+
+[ 2016-03-02T17:14:10+08:00 ] 127.0.0.1 /Admin/Foundation/foundAllClaims?_dc=1456910050015
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0040s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.type,a.status,b.amt_ct,b.amt_ct_last,a.product_name FROM otc_cl_mast a LEFT JOIN otc_cl_ctl b ON a.id=b.cod_cl_id  WHERE a.capitalid = '1' AND a.validflag = 1  [ RunTime:0.0010s ]
+SQL: SELECT sum(b.amt_ct_last) as surplus_amount FROM otc_cl_mast a LEFT JOIN otc_cl_ctl b ON a.id=b.cod_cl_id  WHERE a.capitalid = '1' AND a.validflag = 1  [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:14:36+08:00 ] 127.0.0.1 /Admin/Access/getUserPermission
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,n.permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','66','67','68','69','70','73','74','75','76','77','78','79','80','81','82')  [ RunTime:0.0020s ]
+
+[ 2016-03-02T17:14:37+08:00 ] 127.0.0.1 /Admin/Foundation/viewFoundation
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_capitalpool` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0010s ]
+SQL: SELECT `title` FROM `otc_cf_mast` WHERE `id` = 91 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:14:37+08:00 ] 127.0.0.1 /Admin/Foundation/FoundAllUploadFile
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool_file` [ RunTime:0.0010s ]
+SQL: SELECT `id`,`file`,`type`,`filename` FROM `otc_capitalpool_file` WHERE `capitalid` = 1 AND `validflag` = 1  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT `otc_code` FROM `otc_capitalpool` WHERE `id` = 1 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:14:40+08:00 ] 127.0.0.1 /Admin/Foundation/foundAllClaims?_dc=1456910080563
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.type,a.status,b.amt_ct,b.amt_ct_last,a.product_name FROM otc_cl_mast a LEFT JOIN otc_cl_ctl b ON a.id=b.cod_cl_id  WHERE a.capitalid = '1' AND a.validflag = 1  [ RunTime:0.0010s ]
+SQL: SELECT sum(b.amt_ct_last) as surplus_amount FROM otc_cl_mast a LEFT JOIN otc_cl_ctl b ON a.id=b.cod_cl_id  WHERE a.capitalid = '1' AND a.validflag = 1  [ RunTime:0.0020s ]
+
+[ 2016-03-02T17:16:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:18:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:20:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0010s ]
+
+[ 2016-03-02T17:22:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:24:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:24:03+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0010s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0010s ]
+
+[ 2016-03-02T17:26:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:28:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0010s ]
+
+[ 2016-03-02T17:30:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:32:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0020s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0010s ]
+
+[ 2016-03-02T17:34:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:34:03+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0000s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0010s ]
+
+[ 2016-03-02T17:36:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:38:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:40:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0010s ]
+
+[ 2016-03-02T17:42:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:44:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:44:03+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0000s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0010s ]
+
+[ 2016-03-02T17:46:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:48:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0010s ]
+
+[ 2016-03-02T17:50:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0010s ]
+
+[ 2016-03-02T17:51:34+08:00 ] 127.0.0.1 /Admin/Foundation/foundAllClaims
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT a.id,a.type,a.status,b.amt_ct,b.amt_ct_last,a.product_name FROM otc_cl_mast a LEFT JOIN otc_cl_ctl b ON a.id=b.cod_cl_id  WHERE a.capitalid = '1' AND a.validflag = 1  [ RunTime:0.0010s ]
+SQL: SELECT sum(b.amt_ct_last) as surplus_amount FROM otc_cl_mast a LEFT JOIN otc_cl_ctl b ON a.id=b.cod_cl_id  WHERE a.capitalid = '1' AND a.validflag = 1  [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:51:45+08:00 ] 127.0.0.1 /Admin/Foundation/repurchase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-02T17:51:59+08:00 ] 127.0.0.1 /Admin/Foundation/repurchase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0000s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001001s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001001s ]
+
+[ 2016-03-02T17:52:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:52:50+08:00 ] 127.0.0.1 /Admin/Foundation/repurchase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT b.* FROM otc_capitalpool a INNER JOIN otc_cf_ctl b on a.id = b.capitalid  WHERE a.id = '1' AND a.surplus_amount = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cf_ctl` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_cf_ctl` WHERE `capitalid` = 1 AND `ctr_ct_finish` = 100 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_sum FROM `otc_cf_ctl` WHERE `capitalid` = 1 AND `ctr_ct_finish` = 100 LIMIT 1   [ RunTime:0.0010s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.000000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.000000s ]
+
+[ 2016-03-02T17:53:34+08:00 ] 127.0.0.1 /Admin/Foundation/repurchase
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79','82','81','80')  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0010s ]
+SQL: SELECT b.* FROM otc_capitalpool a INNER JOIN otc_cf_ctl b on a.id = b.capitalid  WHERE a.id = '1' AND a.surplus_amount = 0  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cf_ctl` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_cf_ctl` WHERE `capitalid` = 1 AND `ctr_ct_finish` = 100 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_sum FROM `otc_cf_ctl` WHERE `capitalid` = 1 AND `ctr_ct_finish` = 100 LIMIT 1   [ RunTime:0.0000s ]
+INFO: [ app_end ] --START--
+INFO: Run Behavior\ShowPageTraceBehavior [ RunTime:0.001000s ]
+INFO: [ app_end ] --END-- [ RunTime:0.001000s ]
+
+[ 2016-03-02T17:54:03+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0000s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0010s ]
+
+[ 2016-03-02T17:54:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T17:56:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0010s ]
+
+[ 2016-03-02T17:58:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0010s ]
+
+[ 2016-03-02T18:00:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.001000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T18:02:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0000s ]
+
+[ 2016-03-02T18:04:03+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0010s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0000s ]
+
+[ 2016-03-02T18:04:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_init ] --START--
+INFO: Run Behavior\BuildLiteBehavior [ RunTime:0.000000s ]
+INFO: [ app_init ] --END-- [ RunTime:0.000000s ]
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0000s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0010s ]
+

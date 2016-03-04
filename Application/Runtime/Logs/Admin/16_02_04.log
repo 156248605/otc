@@ -1,0 +1,2355 @@
+[ 2016-02-04T09:09:01+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SELECT * FROM `otc_user` WHERE ( email = 'zb@zb.com' and password = 'e10adc3949ba59abbe56e057f20f883e' and status = 1 ) LIMIT 1   [ RunTime:0.0170s ]
+SQL: SELECT * FROM `otc_user` WHERE `email` = 'zb@zb.com' LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2016-02-04T09:09:03+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1454548143355&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78') AND n.type = 1 AND n.status = 1 ORDER BY n.sort asc, n.id desc  [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+
+[ 2016-02-04T09:09:06+08:00 ] 127.0.0.1 /Admin/claims/getClaimslist?_dc=1454548145812
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78')  [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.2946s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0156s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `usr_create` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0246s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `usr_create` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0030s ]
+
+[ 2016-02-04T09:09:08+08:00 ] 127.0.0.1 /Admin/claims/getClaimsAuditList?_dc=1454548148625
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0156s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0342s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78')  [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0156s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0000s ]
+
+[ 2016-02-04T09:09:10+08:00 ] 127.0.0.1 /Admin/claims/getClaimsReleaseList?_dc=1454548149922
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 332 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 332 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0040s ]
+
+[ 2016-02-04T09:09:11+08:00 ] 127.0.0.1 /Admin/claims/claimsManager?_dc=1454548151030
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0080s ]
+SQL: SELECT sum(surplus_amount) as surplus_amount FROM `otc_capitalpool`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 642 行.
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast a LEFT JOIN otc_capitalpool  b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 643 行.
+SQL: SELECT a.id,a.product_name,b.name,a.status,ifnull(c.amt_ct_last,a.amt_cf_inv_price) as amt_ct_last,ifnull(date_format(c.dat_modify,'%Y-%m-%d'),'--') as dat_create FROM otc_cl_mast a LEFT JOIN otc_capitalpool b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 0,25   [ RunTime:0.0040s ]
+
+[ 2016-02-04T09:11:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0156s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0156s ]
+
+[ 2016-02-04T09:13:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T09:14:36+08:00 ] 127.0.0.1 /Admin/claims/getClaimslist?_dc=1454548476535
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0120s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0080s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `usr_create` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `usr_create` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0060s ]
+
+[ 2016-02-04T09:14:38+08:00 ] 127.0.0.1 /Admin/claims/getClaimsAuditList?_dc=1454548478224
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0300s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0250s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0230s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0180s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78')  [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-02-04T09:14:39+08:00 ] 127.0.0.1 /Admin/claims/getClaimslist?_dc=1454548479425
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78')  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0060s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `usr_create` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `usr_create` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0030s ]
+
+[ 2016-02-04T09:14:40+08:00 ] 127.0.0.1 /Admin/claims/getClaimsAuditList?_dc=1454548480271
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0050s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-02-04T09:14:41+08:00 ] 127.0.0.1 /Admin/claims/getClaimsReleaseList?_dc=1454548480915
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 332 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 332 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0156s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0000s ]
+
+[ 2016-02-04T09:14:42+08:00 ] 127.0.0.1 /Admin/claims/getClaimsAuditList?_dc=1454548481977
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0120s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0120s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0120s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0130s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0040s ]
+
+[ 2016-02-04T09:14:42+08:00 ] 127.0.0.1 /Admin/claims/getClaimslist?_dc=1454548482658
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0070s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78')  [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0156s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0196s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0156s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `usr_create` = 1 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0156s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `usr_create` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0000s ]
+
+[ 2016-02-04T09:14:45+08:00 ] 127.0.0.1 /Admin/claims/getClaimsinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT * FROM `otc_cl_mast` WHERE ( validflag = 1  and id = 252 ) LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2016-02-04T09:15:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T09:17:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T09:19:04+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0220s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0240s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0220s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0230s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0160s ]
+
+[ 2016-02-04T09:19:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0160s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T09:21:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T09:23:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T09:25:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T09:27:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T09:29:04+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0080s ]
+
+[ 2016-02-04T09:29:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T09:31:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T09:33:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T09:35:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T09:37:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.003000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T09:39:04+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0070s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0070s ]
+
+[ 2016-02-04T09:39:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T09:41:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T09:43:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T09:45:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T09:47:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T09:49:04+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0090s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0070s ]
+
+[ 2016-02-04T09:49:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T09:51:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T09:53:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0050s ]
+
+[ 2016-02-04T09:55:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T09:57:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0970s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0710s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0910s ]
+
+[ 2016-02-04T09:59:04+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0070s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0070s ]
+
+[ 2016-02-04T09:59:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T10:01:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T10:03:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T10:05:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T10:07:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T10:09:04+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0080s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0080s ]
+
+[ 2016-02-04T10:09:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T10:11:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T10:13:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T10:15:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T10:17:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0150s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T10:19:04+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0080s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0060s ]
+
+[ 2016-02-04T10:19:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0170s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T10:21:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T10:23:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T10:25:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T10:27:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T10:29:04+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0150s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0180s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0130s ]
+
+[ 2016-02-04T10:29:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T10:31:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T10:33:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T10:35:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0090s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0050s ]
+
+[ 2016-02-04T10:37:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T10:39:04+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0070s ]
+
+[ 2016-02-04T10:39:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T10:41:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T10:43:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T10:45:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T10:47:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0050s ]
+
+[ 2016-02-04T10:49:04+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0460s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0410s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0300s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0190s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0260s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0370s ]
+
+[ 2016-02-04T10:49:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0240s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0140s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0100s ]
+
+[ 2016-02-04T10:51:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T10:53:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T10:55:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0050s ]
+
+[ 2016-02-04T10:57:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.002000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T10:59:04+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0110s ]
+
+[ 2016-02-04T10:59:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:01:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:03:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:05:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T11:07:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:09:05+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0990s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.1170s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.1030s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0270s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0520s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0630s ]
+
+[ 2016-02-04T11:09:05+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T11:11:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T11:13:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:15:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:17:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:19:04+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0070s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0060s ]
+
+[ 2016-02-04T11:19:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:21:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:23:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0430s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0390s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0370s ]
+
+[ 2016-02-04T11:23:21+08:00 ] 127.0.0.1 /Admin/claims/getClaimsAuditList?_dc=1454556201073
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0020s ]
+
+[ 2016-02-04T11:23:21+08:00 ] 127.0.0.1 /Admin/claims/getClaimsReleaseList?_dc=1454556201830
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 332 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 332 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:25:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:27:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0350s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0250s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0260s ]
+
+[ 2016-02-04T11:29:04+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0160s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0180s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0200s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0320s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0210s ]
+
+[ 2016-02-04T11:29:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:31:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0410s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0410s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0100s ]
+
+[ 2016-02-04T11:33:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T11:35:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:35:36+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0140s ]
+SQL: SELECT * FROM `otc_user` WHERE ( email = 'zb@zb.com' and password = 'e10adc3949ba59abbe56e057f20f883e' and status = 1 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user` WHERE `email` = 'zb@zb.com' LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-02-04T11:35:37+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1454556937521&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0080s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0050s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79') AND n.type = 1 AND n.status = 1 ORDER BY n.sort asc, n.id desc  [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+
+[ 2016-02-04T11:37:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:39:04+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0050s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0120s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0100s ]
+
+[ 2016-02-04T11:39:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0060s ]
+
+[ 2016-02-04T11:41:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T11:43:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0240s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0050s ]
+
+[ 2016-02-04T11:45:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:47:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:49:04+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0350s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0350s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0280s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0190s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0200s ]
+
+[ 2016-02-04T11:49:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0050s ]
+
+[ 2016-02-04T11:51:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0070s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T11:51:57+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `otc_user` WHERE ( email = 'zb@zb.com' and password = 'e10adc3949ba59abbe56e057f20f883e' and status = 1 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user` WHERE `email` = 'zb@zb.com' LIMIT 1   [ RunTime:0.0040s ]
+
+[ 2016-02-04T11:51:58+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1454557918473&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79') AND n.type = 1 AND n.status = 1 ORDER BY n.sort asc, n.id desc  [ RunTime:0.0060s ]
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+
+[ 2016-02-04T11:53:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:53:58+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:55:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T11:55:58+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T11:57:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:57:58+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:59:04+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0070s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0070s ]
+
+[ 2016-02-04T11:59:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T11:59:58+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T12:01:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0020s ]
+
+[ 2016-02-04T12:01:58+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0060s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0060s ]
+
+[ 2016-02-04T12:01:58+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T12:03:04+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T16:44:01+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `otc_user` WHERE ( email = 'zb@zb.com' and password = 'e10adc3949ba59abbe56e057f20f883e' and status = 1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user` WHERE `email` = 'zb@zb.com' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-02-04T16:44:02+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1454575442767&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0130s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79') AND n.type = 1 AND n.status = 1 ORDER BY n.sort asc, n.id desc  [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+
+[ 2016-02-04T16:44:05+08:00 ] 127.0.0.1 /Admin/claims/getClaimslist?_dc=1454575445650
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0050s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `usr_create` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `usr_create` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0030s ]
+
+[ 2016-02-04T16:44:09+08:00 ] 127.0.0.1 /Admin/cfmast/getUnfinishProduct?_dc=1454575449066
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_cf_mast` WHERE ( true and otc_cf_mast.usr_create=1 and otc_cf_mast.cod_is_delete=0 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT otc_cf_mast.id,otc_cf_mast.dat_create,otc_cf_mast.title,otc_cf_mast.dat_create,otc_cf_mast.cod_cf_status,otc_cf_mast.amt_ct,otc_cf_mast.rat_cf_inv_min,otc_cf_mast.amt_time,date_format(otc_cf_mast.dat_create,'%Y-%m-%d') as dat_create FROM `otc_cf_mast` WHERE ( true and otc_cf_mast.usr_create=1 and otc_cf_mast.cod_is_delete=0 ) ORDER BY otc_cf_mast.dat_create desc LIMIT 0,25   [ RunTime:0.0020s ]
+
+[ 2016-02-04T16:45:46+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1454575546503&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0090s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0050s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79') AND n.type = 1 AND n.status = 1 ORDER BY n.sort asc, n.id desc  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+
+[ 2016-02-04T16:46:07+08:00 ] 127.0.0.1 /Admin/claims/getClaimslist?_dc=1454575567129
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0040s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0050s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `usr_create` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `usr_create` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0020s ]
+
+[ 2016-02-04T16:46:08+08:00 ] 127.0.0.1 /Admin/claims/getClaimsAuditList?_dc=1454575568804
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0080s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-02-04T16:46:10+08:00 ] 127.0.0.1 /Admin/claims/getClaimsReleaseList?_dc=1454575570755
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 332 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 332 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0020s ]
+
+[ 2016-02-04T16:46:13+08:00 ] 127.0.0.1 /Admin/claims/getClaimsinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT * FROM `otc_cl_mast` WHERE ( validflag = 1  and id = 253 ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-02-04T16:46:21+08:00 ] 127.0.0.1 /Admin/claims/getClaimsAuditList?_dc=1454575581632
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0020s ]
+
+[ 2016-02-04T16:46:23+08:00 ] 127.0.0.1 /Admin/claims/claimsManager?_dc=1454575583756
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0140s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0120s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_capitalpool` [ RunTime:0.0070s ]
+SQL: SELECT sum(surplus_amount) as surplus_amount FROM `otc_capitalpool`  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0080s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 642 行.
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast a LEFT JOIN otc_capitalpool  b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 1   [ RunTime:0.0020s ]
+NOTIC: [8] Undefined variable: where D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 643 行.
+SQL: SELECT a.id,a.product_name,b.name,a.status,ifnull(c.amt_ct_last,a.amt_cf_inv_price) as amt_ct_last,ifnull(date_format(c.dat_modify,'%Y-%m-%d'),'--') as dat_create FROM otc_cl_mast a LEFT JOIN otc_capitalpool b ON a.type=b.investment_type LEFT JOIN otc_cl_ctl c ON a.id=c.cod_cl_id  LIMIT 0,25   [ RunTime:0.0020s ]
+
+[ 2016-02-04T16:46:26+08:00 ] 127.0.0.1 /Admin/claims/getClaimsinfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0150s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0080s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0110s ]
+SQL: SELECT * FROM `otc_cl_mast` WHERE ( validflag = 1  and id = 252 ) LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2016-02-04T16:46:27+08:00 ] 127.0.0.1 /Admin/claims/claimRecord?_dc=1454575586887
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ivs` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_ivs a LEFT JOIN otc_cust_person b ON a.cod_cust_id=b.cod_cust_id LEFT JOIN otc_cf_mast c ON a.cod_cf_id=c.id LEFT JOIN otc_cf_ctl d ON a.cod_cf_ctl_id=d.id  WHERE a.cod_cl_id = '252' LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT a.id,b.nam_cust_real,b.cod_cust_id_no,a.amt_ivs,a.dat_create,concat(c.title,d.cod_period,"期") as title,d.cod_period FROM otc_cl_ivs a LEFT JOIN otc_cust_person b ON a.cod_cust_id=b.cod_cust_id LEFT JOIN otc_cf_mast c ON a.cod_cf_id=c.id LEFT JOIN otc_cf_ctl d ON a.cod_cf_ctl_id=d.id  WHERE a.cod_cl_id = '252' LIMIT 0,25   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT `amt_ct`,`amt_ct_last` FROM `otc_cl_ctl` WHERE `cod_cl_id` = 252 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `product_name` FROM `otc_cl_mast` WHERE `id` = 252 LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-02-04T16:46:38+08:00 ] 127.0.0.1 /Admin/claims/getClaimsReleaseList?_dc=1454575598769
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0090s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+NOTIC: [8] Undefined variable: data D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 332 行.
+NOTIC: [2] Invalid argument supplied for foreach() D:\ svn\otc\Application\Admin\Controller\ClaimsController.class.php 第 332 行.
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0020s ]
+
+[ 2016-02-04T16:46:40+08:00 ] 127.0.0.1 /Admin/claims/getClaimsAuditList?_dc=1454575600124
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 1 ORDER BY id desc  [ RunTime:0.0030s ]
+
+[ 2016-02-04T16:46:41+08:00 ] 127.0.0.1 /Admin/claims/getClaimslist?_dc=1454575601093
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cl_ctl` [ RunTime:0.0060s ]
+SQL: SELECT SUM(amt_ct_last) AS tp_Sum FROM `otc_cl_ctl` LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0060s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `usr_create` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0070s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `usr_create` = 1 ORDER BY id desc LIMIT 0,25   [ RunTime:0.0030s ]
+
+[ 2016-02-04T16:46:52+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1454575612240&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0080s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79') AND n.type = 1 AND n.status = 1 ORDER BY n.sort asc, n.id desc  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+
+[ 2016-02-04T16:46:55+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1454575615832&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0090s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79') AND n.type = 1 AND n.status = 1 ORDER BY n.sort asc, n.id desc  [ RunTime:0.0040s ]
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+
+[ 2016-02-04T16:46:57+08:00 ] 127.0.0.1 /Admin/cfmast/getUnfinishProduct?_dc=1454575617751
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0090s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_cf_mast` WHERE ( true and otc_cf_mast.usr_create=1 and otc_cf_mast.cod_is_delete=0 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT otc_cf_mast.id,otc_cf_mast.dat_create,otc_cf_mast.title,otc_cf_mast.dat_create,otc_cf_mast.cod_cf_status,otc_cf_mast.amt_ct,otc_cf_mast.rat_cf_inv_min,otc_cf_mast.amt_time,date_format(otc_cf_mast.dat_create,'%Y-%m-%d') as dat_create FROM `otc_cf_mast` WHERE ( true and otc_cf_mast.usr_create=1 and otc_cf_mast.cod_is_delete=0 ) ORDER BY otc_cf_mast.dat_create desc LIMIT 0,25   [ RunTime:0.0020s ]
+
+[ 2016-02-04T16:47:01+08:00 ] 127.0.0.1 /Admin/cfmast/tdetail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0130s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0110s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0150s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0090s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0080s ]
+SQL: SELECT otc_cf_mast.id,otc_capitalpool.total_amount as totalmoney,otc_cf_mast.cod_cf_inv_type,otc_cf_mast.amt_cf_inv_min,otc_cf_mast.amt_cf_inv_each,otc_cf_mast.amt_ct_min,otc_cf_mast.amt_ct_max,otc_cf_mast.amt_cf_inv_max,otc_cf_mast.title,otc_cf_mast.cod_cf_status,otc_cf_mast.rat_cf_inv_min,otc_cf_mast.dat_cf_inv_begin,otc_cf_mast.amt_time,otc_cf_mast.dat_cf_inv_end,count(otc_cf_ivs.cod_cf_id) as allp,otc_capitalpool.surplus_amount as amt_ct FROM `otc_cf_mast` left JOIN otc_cl_ctl on otc_cf_mast.cod_cf_inv_type=otc_cl_ctl.type left JOIN otc_cf_ivs on otc_cf_mast.id=otc_cf_ivs.cod_cf_id left JOIN otc_capitalpool on otc_cf_mast.cod_cf_inv_type=otc_capitalpool.investment_type  WHERE ( otc_cf_mast.id=74 ) GROUP BY otc_cf_mast.id LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2016-02-04T16:47:06+08:00 ] 127.0.0.1 /Admin/cfmast/tdetail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0060s ]
+SQL: SELECT otc_cf_mast.id,otc_capitalpool.total_amount as totalmoney,otc_cf_mast.cod_cf_inv_type,otc_cf_mast.amt_cf_inv_min,otc_cf_mast.amt_cf_inv_each,otc_cf_mast.amt_ct_min,otc_cf_mast.amt_ct_max,otc_cf_mast.amt_cf_inv_max,otc_cf_mast.title,otc_cf_mast.cod_cf_status,otc_cf_mast.rat_cf_inv_min,otc_cf_mast.dat_cf_inv_begin,otc_cf_mast.amt_time,otc_cf_mast.dat_cf_inv_end,count(otc_cf_ivs.cod_cf_id) as allp,otc_capitalpool.surplus_amount as amt_ct FROM `otc_cf_mast` left JOIN otc_cl_ctl on otc_cf_mast.cod_cf_inv_type=otc_cl_ctl.type left JOIN otc_cf_ivs on otc_cf_mast.id=otc_cf_ivs.cod_cf_id left JOIN otc_capitalpool on otc_cf_mast.cod_cf_inv_type=otc_capitalpool.investment_type  WHERE ( otc_cf_mast.id=73 ) GROUP BY otc_cf_mast.id LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-02-04T16:47:09+08:00 ] 127.0.0.1 /Admin/cfmast/tdetail
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0070s ]
+SQL: SELECT otc_cf_mast.id,otc_capitalpool.total_amount as totalmoney,otc_cf_mast.cod_cf_inv_type,otc_cf_mast.amt_cf_inv_min,otc_cf_mast.amt_cf_inv_each,otc_cf_mast.amt_ct_min,otc_cf_mast.amt_ct_max,otc_cf_mast.amt_cf_inv_max,otc_cf_mast.title,otc_cf_mast.cod_cf_status,otc_cf_mast.rat_cf_inv_min,otc_cf_mast.dat_cf_inv_begin,otc_cf_mast.amt_time,otc_cf_mast.dat_cf_inv_end,count(otc_cf_ivs.cod_cf_id) as allp,otc_capitalpool.surplus_amount as amt_ct FROM `otc_cf_mast` left JOIN otc_cl_ctl on otc_cf_mast.cod_cf_inv_type=otc_cl_ctl.type left JOIN otc_cf_ivs on otc_cf_mast.id=otc_cf_ivs.cod_cf_id left JOIN otc_capitalpool on otc_cf_mast.cod_cf_inv_type=otc_capitalpool.investment_type  WHERE ( otc_cf_mast.id=72 ) GROUP BY otc_cf_mast.id LIMIT 1   [ RunTime:0.0030s ]
+
+[ 2016-02-04T16:48:56+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T16:50:56+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0050s ]
+
+[ 2016-02-04T16:52:56+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T16:54:56+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T16:56:56+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0080s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0090s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0080s ]
+
+[ 2016-02-04T16:56:56+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0170s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0090s ]
+
+[ 2016-02-04T16:58:56+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T17:00:56+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002001s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0220s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0500s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0320s ]
+
+[ 2016-02-04T17:02:56+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0020s ]
+
+[ 2016-02-04T17:04:56+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T17:06:56+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0100s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0070s ]
+
+[ 2016-02-04T17:06:56+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001001s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001001s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0020s ]
+
+[ 2016-02-04T17:08:56+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0020s ]
+
+[ 2016-02-04T17:10:56+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0020s ]
+
+[ 2016-02-04T17:12:56+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T17:14:56+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0020s ]
+
+[ 2016-02-04T17:16:56+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0110s ]
+
+[ 2016-02-04T17:16:56+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T17:17:03+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1454577423594&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT aa.role_id FROM otc_auth_access as aa left JOIN otc_auth_role as ar ON aa.role_id = ar.id  WHERE aa.uid = 1 AND ar.status = 1  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0090s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79') AND n.type = 1 AND n.status = 1 ORDER BY n.sort asc, n.id desc  [ RunTime:0.0030s ]
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+NOTIC: [8] Undefined index: id D:\ svn\otc\Application\Common\Common\function.php 第 119 行.
+
+[ 2016-02-04T17:17:05+08:00 ] 127.0.0.1 /Admin/cfmast/poslist?_dc=1454577425731
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0100s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0100s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_permission` [ RunTime:0.0060s ]
+SQL: SELECT DISTINCT r.permission_id,n.permission_name,lower(n.`permission_code`) as permission_code FROM otc_auth_role_permission as r INNER JOIN otc_auth_permission as n on n.permission_id = r.permission_id  WHERE r.role_id IN ('65','73','70','69','68','67','66','77','76','75','74','78','79')  [ RunTime:0.0060s ]
+SQL: SHOW COLUMNS FROM `otc_cf_mast` [ RunTime:0.0070s ]
+SQL: SHOW COLUMNS FROM `otc_ivs_view` [ RunTime:0.0070s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_ivs_view` LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_ivs_view` ORDER BY dat_modify asc LIMIT 0,25   [ RunTime:0.0030s ]
+
+[ 2016-02-04T17:19:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0020s ]
+
+[ 2016-02-04T17:21:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0060s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T17:23:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0020s ]
+
+[ 2016-02-04T17:25:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T17:27:03+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0050s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0060s ]
+
+[ 2016-02-04T17:27:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0020s ]
+
+[ 2016-02-04T17:29:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0030s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0080s ]
+
+[ 2016-02-04T17:31:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T17:33:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0020s ]
+
+[ 2016-02-04T17:35:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0050s ]
+
+[ 2016-02-04T17:37:03+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0100s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0080s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0060s ]
+
+[ 2016-02-04T17:37:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T17:39:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0020s ]
+
+[ 2016-02-04T17:41:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T17:43:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T17:45:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0140s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0050s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T17:47:03+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0170s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0120s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0110s ]
+
+[ 2016-02-04T17:47:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0020s ]
+
+[ 2016-02-04T17:49:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0060s ]
+
+[ 2016-02-04T17:51:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0170s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0080s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0370s ]
+
+[ 2016-02-04T17:53:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0130s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0040s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T17:55:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0100s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T17:57:03+08:00 ] 127.0.0.1 /Admin/Message/getPublicMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 90 行.
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0130s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) LIMIT 1   [ RunTime:0.0030s ]
+SQL: SHOW COLUMNS FROM `otc_public_message` [ RunTime:0.0070s ]
+SQL: SELECT a.*,IF(ISNULL(b.id),0,1) as is_view FROM otc_public_message as a left JOIN otc_public_message_log as b on a.id = b.message_id and b.uid = 1  WHERE (  a.status = 1 ) ORDER BY a.add_time desc LIMIT 0,2   [ RunTime:0.0070s ]
+
+[ 2016-02-04T17:57:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0120s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0030s ]
+
+[ 2016-02-04T17:59:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0040s ]
+
+[ 2016-02-04T18:01:03+08:00 ] 127.0.0.1 /Admin/Message/getUserMessageList
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user_message` [ RunTime:0.0110s ]
+NOTIC: [8] Undefined index: status D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 33 行.
+NOTIC: [8] Undefined index: add_time D:\ svn\otc\Application\Admin\Model\UserMessageModel.class.php 第 36 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_user_message` WHERE `uid` = 1 LIMIT 1   [ RunTime:0.0020s ]
+SQL: SELECT * FROM `otc_user_message` WHERE `uid` = 1 ORDER BY add_time desc LIMIT 0,5   [ RunTime:0.0020s ]
+

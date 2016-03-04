@@ -1,0 +1,276 @@
+[ 2016-01-18T09:06:19+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.1360s ]
+SQL: SELECT * FROM `otc_user` WHERE ( email = 'zb@zb.com' and password = 'e10adc3949ba59abbe56e057f20f883e' and status = 1 ) LIMIT 1   [ RunTime:0.0520s ]
+SQL: SELECT * FROM `otc_user` WHERE `email` = 'zb@zb.com' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-18T09:06:21+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1453079181474&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0480s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0560s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0360s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0010s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65') ORDER BY n.sort asc, n.id desc  [ RunTime:0.0810s ]
+
+[ 2016-01-18T09:06:27+08:00 ] 127.0.0.1 /index/process-huishou-icon-win
+ERR: 非法操作:process-huishou-icon-win
+
+[ 2016-01-18T09:06:27+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1453079187281
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0520s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0470s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0000s ]
+
+[ 2016-01-18T10:29:36+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user` WHERE ( email = 'zb@zb.com' and password = 'e10adc3949ba59abbe56e057f20f883e' and status = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user` WHERE `email` = 'zb@zb.com' LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-18T10:29:38+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1453084178532&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65') ORDER BY n.sort asc, n.id desc  [ RunTime:0.0010s ]
+
+[ 2016-01-18T10:38:40+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user` WHERE ( email = 'dfdf@zb.com' and password = 'ae27a4b4821b13cad2a17a75d219853e' and status = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-18T10:38:45+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user` WHERE ( email = 'dfdf@zb.com' and password = 'ae27a4b4821b13cad2a17a75d219853e' and status = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-18T10:38:52+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user` WHERE ( email = 'dfdf@zb.com' and password = 'ae27a4b4821b13cad2a17a75d219853e' and status = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-18T10:38:58+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user` WHERE ( email = 'dfdf@zb.com' and password = 'ae27a4b4821b13cad2a17a75d219853e' and status = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-18T11:03:59+08:00 ] 127.0.0.1 /system/getOrganizationList?_dc=1453086238917
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_organization` [ RunTime:0.0810s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_organization` WHERE (  status <> 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `organization_id`,`organization_name`,`organization_full_name`,`status`,`update_time` FROM `otc_organization` WHERE (  status <> 3 ) ORDER BY organization_id desc LIMIT 0,25   [ RunTime:0.0000s ]
+
+[ 2016-01-18T11:03:59+08:00 ] 127.0.0.1 /system/getdepartmentList?_dc=1453086238919
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_department` [ RunTime:0.0350s ]
+SQL: SHOW COLUMNS FROM `otc_department` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_department as d WHERE (  d.status = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_department` [ RunTime:0.0000s ]
+SQL: SELECT d.*,o.organization_name,dp.name as firstdepartment_name FROM otc_department as d left JOIN otc_organization as o ON d.organization_id = o.organization_id left JOIN otc_department as dp ON d.pid = dp.id  WHERE (  d.status <> 3 ) ORDER BY id desc LIMIT 0,25   [ RunTime:0.0020s ]
+
+[ 2016-01-18T11:03:59+08:00 ] 127.0.0.1 /system/getdepartmentList?_dc=1453086238921
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_department` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_department` [ RunTime:0.0000s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_department as d WHERE (  d.status = 1 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_department` [ RunTime:0.0010s ]
+SQL: SELECT d.*,o.organization_name,dp.name as firstdepartment_name FROM otc_department as d left JOIN otc_organization as o ON d.organization_id = o.organization_id left JOIN otc_department as dp ON d.pid = dp.id  WHERE (  d.status <> 3 ) ORDER BY id desc LIMIT 0,25   [ RunTime:0.0010s ]
+
+[ 2016-01-18T11:03:59+08:00 ] 127.0.0.1 /index/notebook-icon-win
+ERR: 非法操作:notebook-icon-win
+
+[ 2016-01-18T11:03:59+08:00 ] 127.0.0.1 /admin/system/getpositionList?_dc=1453086239386
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002000s ]
+SQL: SHOW COLUMNS FROM `otc_department` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_position` [ RunTime:0.0320s ]
+SQL: SHOW COLUMNS FROM `otc_position` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_position as p WHERE (  p.status <> 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_position` [ RunTime:0.0010s ]
+SQL: SELECT p.*,d.pid as department_pid,d.name as department_name,o.organization_name,( SELECT dp.name FROM otc_department as dp WHERE ( d.pid = dp.id )  ) as firstdepartment_name FROM otc_position as p left JOIN otc_organization as o ON p.organization_id = o.organization_id left JOIN otc_department as d ON p.department_id = d.id  WHERE (  p.status <> 3 ) ORDER BY p.id desc LIMIT 0,25   [ RunTime:0.0080s ]
+
+[ 2016-01-18T11:04:06+08:00 ] 127.0.0.1 /admin/system/getpositionInfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_department` [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_position` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_position` [ RunTime:0.0010s ]
+SQL: SELECT p.*,d.pid as department_pid,d.name as department_name,o.organization_name,( SELECT dp.name FROM otc_department as dp WHERE ( d.pid = dp.id )  ) as firstdepartment_name FROM otc_position as p left JOIN otc_organization as o ON p.organization_id = o.organization_id left JOIN otc_department as d ON p.department_id = d.id  WHERE (  p.id = 2 ) LIMIT 1   [ RunTime:0.0020s ]
+
+[ 2016-01-18T11:44:14+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_user` WHERE ( email = 'dfdf@zb.com' and password = 'ae27a4b4821b13cad2a17a75d219853e' and status = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-18T11:44:19+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user` WHERE ( email = 'dfdf@zb.com' and password = 'ae27a4b4821b13cad2a17a75d219853e' and status = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-18T13:10:07+08:00 ] 127.0.0.1 /common/login.html
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_user` WHERE ( email = 'zb@zb.com' and password = 'e10adc3949ba59abbe56e057f20f883e' and status = 1 ) LIMIT 1   [ RunTime:0.0590s ]
+SQL: SELECT * FROM `otc_user` WHERE `email` = 'zb@zb.com' LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-18T13:10:09+08:00 ] 127.0.0.1 /Admin/Access/getUserNodeList?_dc=1453093809040&page=1&start=0&limit=25
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_user` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_access` [ RunTime:0.0010s ]
+SQL: SELECT `role_id` FROM `otc_auth_access` WHERE ( uid = 1 )  [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role_node` [ RunTime:0.0000s ]
+SQL: SELECT DISTINCT r.node_id,n.name,n.pid,n.module,n.iconCls,n.group,n.url FROM otc_auth_role_node as r INNER JOIN otc_auth_node as n on n.id = r.node_id  WHERE r.role_id IN ('65') ORDER BY n.sort asc, n.id desc  [ RunTime:0.0450s ]
+
+[ 2016-01-18T13:10:11+08:00 ] 127.0.0.1 /index/process-huishou-icon-win
+ERR: 非法操作:process-huishou-icon-win
+
+[ 2016-01-18T13:10:11+08:00 ] 127.0.0.1 /admin/claims/getClaimsReleaseList?_dc=1453093811719
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0020s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_cl_mast` [ RunTime:0.0010s ]
+SQL: SELECT d.* FROM otc_cl_mast as d WHERE `validflag` = 1 AND `status` = 2 ORDER BY id desc  [ RunTime:0.0010s ]
+
+[ 2016-01-18T17:18:20+08:00 ] 127.0.0.1 /index/process-status-icon-win
+ERR: 非法操作:process-status-icon-win
+
+[ 2016-01-18T17:18:20+08:00 ] 127.0.0.1 /admin/system/getNodeList?_dc=1453108700855
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_node` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_auth_node` WHERE (  status <> 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`name`,`module`,`url`,`iconcls`,`group`,`type`,`sort`,`status`,`update_time` FROM `otc_auth_node` WHERE (  status <> 3 ) ORDER BY id desc LIMIT 0,25   [ RunTime:0.0010s ]
+
+[ 2016-01-18T17:18:27+08:00 ] 127.0.0.1 /admin/system/getNodeInfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_node` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_auth_node` WHERE `id` = 129 LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-18T17:46:36+08:00 ] 127.0.0.1 /index/xitongcanshu-icon-win
+ERR: 非法操作:xitongcanshu-icon-win
+
+[ 2016-01-18T17:46:36+08:00 ] 127.0.0.1 /admin/system/getOrganizationList?_dc=1453110396426
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_organization` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_organization` WHERE (  status <> 3 ) LIMIT 1   [ RunTime:0.0010s ]
+SQL: SELECT `organization_id`,`organization_name`,`organization_full_name`,`status`,`update_time` FROM `otc_organization` WHERE (  status <> 3 ) ORDER BY organization_id desc LIMIT 0,25   [ RunTime:0.0000s ]
+
+[ 2016-01-18T17:53:32+08:00 ] 127.0.0.1 /admin/system/getOrganizationList?_dc=1453110812348
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_organization` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_organization` WHERE (  status <> 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `organization_id`,`organization_name`,`organization_full_name`,`status`,`update_time` FROM `otc_organization` WHERE (  status <> 3 ) ORDER BY organization_id desc LIMIT 0,25   [ RunTime:0.0000s ]
+
+[ 2016-01-18T17:53:32+08:00 ] 127.0.0.1 /index/xitongcanshu-icon-win
+ERR: 非法操作:xitongcanshu-icon-win
+
+[ 2016-01-18T17:53:37+08:00 ] 127.0.0.1 /index/process-status-icon-win
+ERR: 非法操作:process-status-icon-win
+
+[ 2016-01-18T17:53:37+08:00 ] 127.0.0.1 /admin/system/getNodeList?_dc=1453110817002
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.001000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_node` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_auth_node` WHERE (  status <> 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `id`,`pid`,`name`,`module`,`url`,`iconcls`,`group`,`type`,`sort`,`status`,`update_time` FROM `otc_auth_node` WHERE (  status <> 3 ) ORDER BY id desc LIMIT 0,25   [ RunTime:0.0000s ]
+
+[ 2016-01-18T17:53:41+08:00 ] 127.0.0.1 /index/process-shenhe-icon-win
+ERR: 非法操作:process-shenhe-icon-win
+
+[ 2016-01-18T17:53:41+08:00 ] 127.0.0.1 /admin/system/getpermissionList?_dc=1453110821413
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_permission` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_auth_permission` WHERE (  status <> 3 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SELECT `permission_id`,`permission_code`,`permission_name`,`status`,`update_time` FROM `otc_auth_permission` WHERE (  status <> 3 ) ORDER BY permission_id desc LIMIT 0,25   [ RunTime:0.0000s ]
+
+[ 2016-01-18T17:54:41+08:00 ] 127.0.0.1 /index/process-table-icon-win
+ERR: 非法操作:process-table-icon-win
+
+[ 2016-01-18T17:54:41+08:00 ] 127.0.0.1 /admin/system/getRoleList?_dc=1453110881208
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM `otc_auth_role` WHERE (  status <> 3 ) LIMIT 1   [ RunTime:0.0160s ]
+SQL: SELECT `id`,`title`,`remark`,`status`,`sort`,`update_time` FROM `otc_auth_role` WHERE (  status <> 3 ) ORDER BY id desc LIMIT 0,25   [ RunTime:0.0000s ]
+
+[ 2016-01-18T17:54:46+08:00 ] 127.0.0.1 /admin/system/getRoleInfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role` [ RunTime:0.0010s ]
+SQL: SELECT * FROM `otc_auth_role` WHERE (  id = 65 ) LIMIT 1   [ RunTime:0.0000s ]
+
+[ 2016-01-18T17:54:50+08:00 ] 127.0.0.1 /admin/system/getRoleInfo
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.001000s ]
+SQL: SHOW COLUMNS FROM `otc_auth_role` [ RunTime:0.0000s ]
+SQL: SELECT * FROM `otc_auth_role` WHERE (  id = 65 ) LIMIT 1   [ RunTime:0.0010s ]
+
+[ 2016-01-18T17:55:00+08:00 ] 127.0.0.1 /index/notebook-icon-win
+ERR: 非法操作:notebook-icon-win
+
+[ 2016-01-18T17:55:00+08:00 ] 127.0.0.1 /admin/system/getdepartmentList?_dc=1453110900205
+INFO: [ app_begin ] --START--
+INFO: Run Behavior\ReadHtmlCacheBehavior [ RunTime:0.000000s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000000s ]
+SQL: SHOW COLUMNS FROM `otc_department` [ RunTime:0.0010s ]
+SQL: SHOW COLUMNS FROM `otc_department` [ RunTime:0.0010s ]
+SQL: SELECT COUNT(*) AS tp_count FROM otc_department as d WHERE (  d.status = 1 ) LIMIT 1   [ RunTime:0.0000s ]
+SQL: SHOW COLUMNS FROM `otc_department` [ RunTime:0.0000s ]
+SQL: SELECT d.*,o.organization_name,dp.name as firstdepartment_name FROM otc_department as d left JOIN otc_organization as o ON d.organization_id = o.organization_id left JOIN otc_department as dp ON d.pid = dp.id  WHERE (  d.status <> 3 ) ORDER BY id desc LIMIT 0,25   [ RunTime:0.0010s ]
+
